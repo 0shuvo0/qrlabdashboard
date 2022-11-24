@@ -1,0 +1,20 @@
+{
+  "name": "qrlabdashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass assets/styles.scss assets/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0shuvo0/qrlabdashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0shuvo0/qrlabdashboard/issues"
+  },
+  "homepage": "https://github.com/0shuvo0/qrlabdashboard#readme"
+}
