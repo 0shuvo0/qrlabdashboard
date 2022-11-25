@@ -68,6 +68,7 @@ body > * {
   margin-top: 1em !important;
   margin-bottom: 5em !important;
   padding: 0 1em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 .navbar .logo svg {
   width: 52px;
