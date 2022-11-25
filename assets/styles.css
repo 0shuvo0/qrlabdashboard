@@ -12,11 +12,21 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-size: 16px;
   font-family: "Satoshi", sans-serif;
   color: var(--color-body);
   background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  width: 100%;
 }
 
 .page-hero {
@@ -50,15 +60,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1em !important;
+  margin-top: 0.25em !important;
   gap: 1em;
   width: 100%;
 }
-.navbar .logo {
-  --size: 73px;
-}
 .navbar .logo svg {
-  width: var(--size);
+  width: 52px;
 }
 .navbar .nav {
   display: flex;
@@ -136,8 +143,8 @@ body {
 }
 
 .page-footer {
-  margin-top: 5em !important;
-  margin-bottom: 1em;
+  margin-top: auto !important;
+  padding-bottom: 2em !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -437,7 +444,7 @@ body {
 .container {
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 1160px;
 }
 
 @media (max-width: 1300px) {
