@@ -57,9 +57,13 @@ body > *{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: .25em !important;
     gap: 1em;
     width: 100%;
+    background-image: url('bg-gradient-rect.png');
+    background-size: cover;
+    border-radius: 12px;
+    margin-top: 1em !important;
+    margin-bottom: 7em !important;
     .logo{
         svg{
             width: 52px;
