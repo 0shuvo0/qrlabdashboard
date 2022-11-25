@@ -29,34 +29,11 @@ body > * {
   width: 100%;
 }
 
-.page-hero {
-  height: 257px;
-  position: relative;
-  overflow: hidden;
+.navbar {
   display: flex;
-  flex-direction: column;
-}
-.page-hero .bg-gradient {
-  min-width: 100%;
-  height: auto;
-  display: block;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-.page-hero .hero-title {
-  color: var(--color-dark);
-  letter-spacing: -0.04em;
-  font-weight: 900;
-  font-size: 5.25em;
-  text-align: center;
-  margin-top: auto;
-  padding-bottom: 0.5em;
-}
-
-.navbar-container {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
   background-image: url("bg-gradient-rect.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,14 +41,8 @@ body > * {
   border-radius: 10px;
   margin: 1em !important;
   margin-bottom: 5em !important;
+  padding: 0 1em;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1em;
   overflow: hidden;
   position: relative;
 }
@@ -114,7 +85,7 @@ body > * {
 
 .badge-btn {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
   color: #fff;
   background-color: var(--color-primary);
