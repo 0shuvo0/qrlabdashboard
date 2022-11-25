@@ -53,6 +53,12 @@ body{
     margin-top: 1em !important;
     gap: 1em;
     width: 100%;
+    .logo{
+        --size: 73px;
+        svg{
+            width: var(--size);
+        }
+    }
     .nav{
         display: flex;
         flex-wrap: wrap;
@@ -131,7 +137,7 @@ body{
 
 
 .page-footer{
-    margin-top: 5em;
+    margin-top: 5em !important;
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
