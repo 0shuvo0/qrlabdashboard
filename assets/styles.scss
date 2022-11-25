@@ -50,8 +50,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 1em !important;
     gap: 1em;
+    width: 100%;
     .nav{
         display: flex;
         flex-wrap: wrap;
@@ -330,6 +331,7 @@ body{
                 border: 2px solid #425466;
                 border-radius: 12px;
                 transform: translate(-10px, -10px);
+                display: none;
                 .icon{
                     display: none;
                     color: #fff;
@@ -338,8 +340,12 @@ body{
             }
         }
     }
+    &:hover .qr-code .qr-code-selected{
+        display: flex;
+    }
     &.active .qr-code .qr-code-selected{
         background-color: var(--color-primary);
+        display: flex;
         .icon{
             display: inline-block;
         }
@@ -427,16 +433,13 @@ body{
 
 
 .container{
-    --padding: 12em;
-    padding-left: var(--padding);
-    padding-right: var(--padding);
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1120px;
 }
 
 // Media queries
 @media(max-width: 1300px){
-    .container{
-        --padding: 9em;
-    }
     .page-hero .hero-title{
         font-size: 5em;
     }
@@ -448,9 +451,6 @@ body{
     }
 }
 @media(max-width: 1200px){
-    .container{
-        --padding: 6em;
-    }
     .page-hero .hero-title{
         font-size: 4.5em;
     }
@@ -462,9 +462,6 @@ body{
     }
 }
 @media(max-width: 992px){
-    .container{
-        --padding: 4em;
-    }
     .page-hero .hero-title{
         font-size: 4em;
     }
@@ -477,9 +474,6 @@ body{
     }
 }
 @media(max-width: 576px){
-    .container{
-        --padding: 3em;
-    }
     .page-hero .hero-title{
         font-size: 3em;
     }
