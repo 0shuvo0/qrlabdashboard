@@ -147,6 +147,9 @@ body > *{
         font-weight: 500;
         font-size: 18px;
         color: var(--color-body);
+        a{
+            color: var(--color-body);
+        }
     }
     .card-link{
         font-weight: 700;

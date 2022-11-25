@@ -123,6 +123,9 @@ body > * {
   font-size: 18px;
   color: var(--color-body);
 }
+.dashboard-card .card-info a {
+  color: var(--color-body);
+}
 .dashboard-card .card-link {
   font-weight: 700;
   font-size: 18px;
