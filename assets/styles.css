@@ -92,7 +92,7 @@ body > * {
   display: inline-block;
   padding: 0.3em 0.9em;
   border-radius: 30px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .dashboard-cards {
