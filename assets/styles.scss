@@ -40,6 +40,7 @@ button{
 .page-hero{
     height: 257px;
     position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     .bg-gradient{
@@ -89,6 +90,9 @@ button{
             font-weight: 700;
             font-size: 15px;
             letter-spacing: -0.01em;
+        }
+        .popup-btn-popup{
+            box-shadow: none !important;
         }
     }
 }

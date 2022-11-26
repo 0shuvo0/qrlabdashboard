@@ -47,6 +47,7 @@ button {
 .page-hero {
   height: 257px;
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -100,6 +101,9 @@ button {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: -0.01em;
+}
+.navbar .nav .popup-btn-popup {
+  box-shadow: none !important;
 }
 
 .navbar-mobile-toggle-btn {
