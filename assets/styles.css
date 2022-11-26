@@ -69,6 +69,10 @@ button {
   padding-bottom: 0.5em;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -97,6 +101,70 @@ button {
   letter-spacing: -0.01em;
 }
 
+.navbar-mobile-toggle-btn {
+  --size: 38px;
+  height: var(--size);
+  width: var(--size);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.sidebar-wrapper.hidden {
+  display: none;
+}
+.sidebar-wrapper .sidebar-content {
+  height: 100%;
+  max-width: 300px;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 1.5em;
+  padding-top: 1em;
+  box-shadow: 3px 0 20px rgba(0, 0, 0, 0.1);
+  animation: 0.2s slideInLeft ease-in;
+}
+.sidebar-wrapper .sidebar-content .close-btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+.sidebar-wrapper .sidebar-content .menu-group-heading {
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 700;
+}
+.sidebar-wrapper .sidebar-content .menu-group {
+  margin-bottom: 2em;
+  padding-left: 1em;
+}
+.sidebar-wrapper .sidebar-content .menu-group .menu-group-item {
+  display: block;
+  color: var(--color-body);
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 0.5em;
+}
+.sidebar-wrapper .sidebar-content .menu-group .menu-group-item:hover {
+  color: var(--color-dark);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-10%);
+    opacity: 0.8;
+  }
+}
 .page-content {
   margin-top: 4em;
 }
@@ -586,6 +654,27 @@ button {
   padding: 0 20px;
   margin: 0 auto;
   max-width: 1120px;
+}
+
+@media (max-width: 776px) {
+  .navbar .nav, .navbar .avatar {
+    display: none;
+  }
+  .navbar-mobile-toggle-btn {
+    display: flex;
+  }
+  .page-hero {
+    height: 360px;
+  }
+  .page-hero .bg-gradient {
+    min-height: 100%;
+  }
+  .hero-title {
+    display: none;
+  }
+  .page-content {
+    margin-top: -250px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
