@@ -114,6 +114,7 @@ button{
         display: none;
     }
     .sidebar-content{
+        margin-left: auto;
         height: 100%;
         max-width: 300px;
         overflow-y: auto;
@@ -121,7 +122,7 @@ button{
         padding: 1.5em;
         padding-top: 1em;
         box-shadow: 3px 0 20px rgba(0,0,0,.1);
-        animation: .2s slideInLeft ease-in;
+        animation: .2s slideInRight ease-in;
         .close-btn{
             font-size: 20px;
             cursor: pointer;
@@ -147,9 +148,9 @@ button{
         }
     }
 }
-@keyframes slideInLeft {
+@keyframes slideInRight {
     from{
-        transform: translateX(-10%);
+        transform: translateX(10%);
         opacity: .8;
     }
 }
