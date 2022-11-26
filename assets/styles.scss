@@ -10,6 +10,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 html, body{
     min-height: 100vh;
@@ -82,7 +84,7 @@ button{
         flex-wrap: wrap;
         align-items: center;
         gap: .5em 2em;
-        a{
+        & > span > span, a{
             color: #fff;
             text-decoration: none;
             font-weight: 700;
@@ -674,6 +676,24 @@ button{
     }
     .page-content{
         margin-top: -250px;
+    }
+    .page-title{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 0;
+        .badge-btn{
+            margin-bottom: 1em;
+        }
+    }
+    .form-header{
+        .form-input{
+            max-width: 100% !important;
+        }
+        .selection-info{
+            width: 100%;
+            justify-content: flex-end;
+        }
     }
 }
 // Media queries
