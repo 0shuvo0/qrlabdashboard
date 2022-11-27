@@ -5,9 +5,12 @@ const $$ = (v, p = document) => [...p.querySelectorAll(v)]
 const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:first-child')
 const qrCodeEditDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)')
 const qrCodeDeleteDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(3)')
+const addNewFolderBtn = $('.add-new-folder-btn')
+
 const editInfoModal= $('.edit-info-modal-wrapper')
 const editDesignModal= $('.edit-design-modal-wrapper')
 const deleteQRCodesModal= $('.delete-modal-wrapper')
+const addNewFolderModal= $('.add-new-folder-modal-wrapper')
 
 
 $$('.close-btn', editInfoModal).forEach(btn => {
@@ -23,6 +26,11 @@ $$('.close-btn', editDesignModal).forEach(btn => {
 $$('.close-btn', deleteQRCodesModal).forEach(btn => {
     btn.addEventListener('click', () => {
         deleteQRCodesModal.classList.add('hidden')
+    })
+})
+$$('.close-btn', addNewFolderModal).forEach(btn => {
+    btn.addEventListener('click', () => {
+        addNewFolderModal.classList.add('hidden')
     })
 })
 
@@ -42,6 +50,9 @@ qrCodeDeleteDesignBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         deleteQRCodesModal.classList.remove('hidden')
     })
+})
+addNewFolderBtn.addEventListener('click', () => {
+    addNewFolderModal.classList.remove('hidden')
 })
 
 $('.info-item.delete').addEventListener('click', () => {
