@@ -825,6 +825,7 @@ button{
             }
         }
         .qr-code-selected{
+            display: flex;
             left: auto !important;
             right: 20px !important;
         }

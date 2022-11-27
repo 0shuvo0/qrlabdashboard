@@ -818,6 +818,7 @@ button {
     margin-top: 1em;
   }
   .generated-link-item .qr-code-selected {
+    display: flex;
     left: auto !important;
     right: 20px !important;
   }
