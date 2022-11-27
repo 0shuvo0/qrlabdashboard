@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass assets/styles.scss assets/styles.css --watch"
+    "start": "sass assets/styles.scss assets/styles.css --watch",
+    "build": "postcss assets/styles.css --replace --use autoprefixer"
   },
   "repository": {
     "type": "git",
