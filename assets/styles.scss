@@ -375,11 +375,59 @@ button{
     box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     display: flex;
+    position: relative;
+    .qr-code-selected{
+        --size: 52px;
+        height: var(--size);
+        width: var(--size);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.75em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #FAFAFA;
+        border: 2px solid #425466;
+        border-radius: 12px;
+        transform: translate(10px, 10px);
+        display: none;
+        .icon{
+            display: none;
+            color: #fff;
+            margin-top: -10px;
+        }
+    }
+    &:hover .qr-code-selected{
+        display: flex;
+    }
+    &.active .qr-code-selected{
+        border: none;
+        background-color: var(--color-primary);
+        display: flex;
+        .icon{
+            display: inline-block;
+        }
+    }
+    &.active{
+        border-color: var(--color-primary);
+    }
     .content{
         flex-grow: 1;
         padding: 1.4em;
         display: flex;
         gap: 1em;
+        .content-badge-btns{
+            display: none;
+            gap: 1em;
+            .badge-btn{
+                flex-grow: 1;
+                width: 50%;
+                margin-top: 1em;
+                padding-top: .5em;
+                padding-bottom: .5em;
+            }
+        }
     }
     .qr-code-container{
         width: 140px;
@@ -389,44 +437,6 @@ button{
         .qr-code, .qr-code > *{
             width: 100%;
         }
-        .qr-code{
-            position: relative;
-            .qr-code-selected{
-                --size: 52px;
-                height: var(--size);
-                width: var(--size);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2.75em;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background: #FAFAFA;
-                border: 2px solid #425466;
-                border-radius: 12px;
-                transform: translate(-10px, -10px);
-                display: none;
-                .icon{
-                    display: none;
-                    color: #fff;
-                    margin-top: -10px;
-                }
-            }
-        }
-    }
-    &:hover .qr-code .qr-code-selected{
-        display: flex;
-    }
-    &.active .qr-code .qr-code-selected{
-        background-color: var(--color-primary);
-        display: flex;
-        .icon{
-            display: inline-block;
-        }
-    }
-    &.active{
-        border-color: var(--color-primary);
     }
     .badge-btn{
         font-weight: 700;
@@ -696,6 +706,44 @@ button{
         .selection-info{
             width: 100%;
             justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+    }
+    .generated-link-item{
+        flex-flow: column;
+        .promo{
+            width: auto;
+            margin: 1em;
+            border: 1px solid #DFE4EA;
+            border-radius: 8px;
+            .promo-footer{
+                display: flex;
+                gap: 1em;
+                margin-top: 1em;
+            }
+        }
+        .qr-code-selected{
+            left: auto !important;
+            right: 20px !important;
+        }
+    }
+}
+@media(max-width: 576px){
+    .generated-link-item{
+        .content{
+            flex-direction: column;
+            .qr-code-container{
+                flex-direction: column;
+                .badge-btn{
+                    display: none;
+                }
+            }
+            .scan-count-text{
+                margin-top: 1.5em;
+            }
+            .content-badge-btns{
+                display: flex;
+            }
         }
     }
 }
