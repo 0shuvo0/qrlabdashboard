@@ -37,6 +37,9 @@ button{
 .mt-025{
     margin-top: .52em;
 }
+.d-block{
+    display: block !important;
+}
 .page-hero{
     height: 257px;
     position: relative;
@@ -127,7 +130,7 @@ button{
         padding: 1.5em;
         padding-top: 1em;
         box-shadow: 3px 0 20px rgba(0,0,0,.1);
-        animation: .2s slideInRight ease-in;
+        animation: .35s slideInRight ease-out;
         .close-btn{
             font-size: 20px;
             cursor: pointer;
@@ -155,7 +158,7 @@ button{
 }
 @keyframes slideInRight {
     from{
-        transform: translateX(10%);
+        transform: translateX(60%);
         opacity: .8;
     }
 }
@@ -597,6 +600,29 @@ button{
     }
 }
 
+.accordion-container{
+    background: #FFFFFF;
+    border: 1.5px solid #E2E2E2;
+    border-radius: 24px;
+    .accordion-header{
+        padding: 1.25em 1.5em;
+        border-bottom: 1.60714px solid #E2E2E2;
+        display: flex;
+        align-items: center;
+        gap: .75em;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--color-dark);
+        &:last-child{
+            border-bottom: none;
+        }
+        .expand-btn{
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+}
+
 
 .modal-wrapper{
     position: fixed;
@@ -661,6 +687,64 @@ button{
     max-width: 420px;
 }
 
+.modal-content.edit-design-modal{
+    max-width: 877px;
+}
+
+
+.edit-design-content{
+    display: flex;
+    gap: 1em;
+    .accordion-container{
+        flex-grow: 1;
+    }
+    .qr-code-container{
+        // box-shadow: 0px 115px 115px rgba(0, 0, 0, 0.06);background: #FFFFFF;
+        border: 1.5px solid #E2E2E2;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+    }
+}
+
+
+.move-to-folders{
+    text-align: left;
+    .header, .footer{
+        padding: .6em 1.5em;
+        background-color: #fff;
+        background: #FAFAFA;
+        border-bottom: 1px solid #DFE4EA;
+        font-weight: 700;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        svg{
+            margin-right: .75em;
+        }
+    }
+    .header{
+        padding: .75em 1.5em;
+    }
+    .footer{
+        border-bottom: none;
+        border-top: 1px solid #DFE4EA;
+        gap: 1em;
+        justify-content: space-between;
+        font-size: 13px;
+        .badge-btn{
+            font-size: 13px;
+        }
+    }
+    .folders-conatiner{
+        height: 100px;
+    }
+}
+
+
+
 
 
 .container{
@@ -668,7 +752,20 @@ button{
     margin: 0 auto;
     max-width: 1120px;
 }
+.popup-btn.avatar{
+    .popup-btn-popup-wrapper{
+        padding-top: 3.5em;
+    }
+}
 
+@media(max-width: 1250px){
+    .popup-btn.avatar{
+        .popup-btn-popup-wrapper{
+            left: 100%;
+            transform: translate(-100%, 0);
+        }
+    }
+}
 @media(max-width: 776px){
     .navbar{
         .nav, .avatar{
@@ -727,6 +824,18 @@ button{
             right: 20px !important;
         }
     }
+    .edit-design-content{
+        display: grid;
+        grid-template-areas: 'qr-code'
+                             'settings';
+        .qr-code-container{
+            grid-area: qr-code;
+            padding: 2em;
+        }
+        .accordion-container{
+            grid-area: settings;
+        }
+    }
 }
 @media(max-width: 576px){
     .generated-link-item{
@@ -744,6 +853,16 @@ button{
             .content-badge-btns{
                 display: flex;
             }
+        }
+    }
+    .modal-wrapper{
+        align-items: flex-end;
+        .modal-content{
+            width: 100%;
+            max-width: 100% !important;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            padding-bottom: 5em;
         }
     }
 }

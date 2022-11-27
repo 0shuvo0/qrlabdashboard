@@ -72,12 +72,24 @@
                 <a href="#">Analytics</a>
                 <a href="#">Account</a>
             </div>
-            <a href="#" class="logo avatar">
+            <span class="logo avatar popup-btn">
                 <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M39.3555 6.73653C35.0114 2.39244 29.2355 0 23.092 0C16.9486 0 11.1727 2.39244 6.82857 6.73653C2.48448 11.0806 0.092041 16.8566 0.092041 23C0.092041 29.1434 2.48448 34.9194 6.82857 39.2635C11.1727 43.6076 16.9486 46 23.092 46C29.2355 46 35.0114 43.6076 39.3555 39.2635C43.6996 34.9194 46.092 29.1434 46.092 23C46.092 16.8566 43.6996 11.0806 39.3555 6.73653ZM10.0742 38.5696C10.8336 32.0349 16.452 26.9896 23.092 26.9896C26.5924 26.9896 29.884 28.3534 32.36 30.829C34.4517 32.9211 35.7709 35.6525 36.1103 38.5693C32.5832 41.5233 28.0419 43.3047 23.092 43.3047C18.1422 43.3047 13.6012 41.5236 10.0742 38.5696ZM23.092 24.2136C19.2403 24.2136 16.1063 21.0796 16.1063 17.2279C16.1063 13.3758 19.2403 10.2422 23.092 10.2422C26.9437 10.2422 30.0777 13.3758 30.0777 17.2279C30.0777 21.0796 26.9437 24.2136 23.092 24.2136ZM38.4301 36.2909C37.7432 33.5219 36.311 30.9687 34.2657 28.9234C32.6092 27.2669 30.6494 26.0242 28.5121 25.2454C31.0815 23.5029 32.7731 20.5591 32.7731 17.2279C32.7731 11.8899 28.43 7.54688 23.092 7.54688C17.7541 7.54688 13.411 11.8899 13.411 17.2279C13.411 20.5609 15.104 23.5057 17.6754 25.2478C15.7091 25.9645 13.8894 27.0724 12.3238 28.531C10.0566 30.6423 8.48225 33.3345 7.75227 36.2888C4.66074 32.7249 2.78735 28.0772 2.78735 23C2.78735 11.8039 11.896 2.69531 23.092 2.69531C34.2881 2.69531 43.3967 11.8039 43.3967 23C43.3967 28.0783 41.5226 32.727 38.4301 36.2909Z" fill="#FAFAFA"/>
                     <path d="M38.4301 36.2909C37.7432 33.5219 36.311 30.9687 34.2657 28.9234C32.6092 27.2669 30.6494 26.0242 28.5121 25.2454C31.0815 23.5029 32.7731 20.5591 32.7731 17.2279C32.7731 11.8899 28.43 7.54688 23.092 7.54688C17.7541 7.54688 13.411 11.8899 13.411 17.2279C13.411 20.5609 15.104 23.5057 17.6754 25.2478C15.7091 25.9645 13.8894 27.0724 12.3238 28.531C10.0566 30.6423 8.48225 33.3345 7.75227 36.2888C4.66074 32.7249 2.78735 28.0772 2.78735 23C2.78735 11.8039 11.896 2.69531 23.092 2.69531C34.2881 2.69531 43.3967 11.8039 43.3967 23C43.3967 28.0783 41.5226 32.727 38.4301 36.2909Z" fill="#FAFAFA"/>
-                </svg>                    
-            </a>
+                </svg>
+                <div class="popup-btn-popup-wrapper aign-left pt-3-5">
+                    <div
+                        class="popup-btn-popup"
+                        style="--popup-width: 160px"
+                    >
+                        <div class="popup-btn-links">
+                            <a href="#" class="popup-btn-link">
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>             
+            </span>
             <div class="navbar-mobile-toggle-btn">
                 <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.5H19" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,7 +98,7 @@
                 </svg>
             </div>
         </div>
-        <p class="hero-title">QR Codes</p>
+        <p class="hero-title">Welcome, name</p>
     </div>
 
     <div class="sidebar-wrapper hidden">
@@ -105,6 +117,10 @@
             <div class="menu-group">
                 <a href="#" class="menu-group-item">Dynamic NFC</a>
                 <a href="#" class="menu-group-item">Encrypted NFC</a>
+            </div>
+            <div class="menu-group-heading">Account</div>
+            <div class="menu-group">
+                <a href="#" class="menu-group-item">Logout</a>
             </div>
         </div>
         <script>
@@ -139,7 +155,35 @@
                 </div>
                 <div class="selection-info">
                     <div class="selected-text">1 selected</div>
-                    <div class="info-item">Move</div>
+                    <div class="info-item popup-btn">
+                        <span>Move</span>
+                        <div class="popup-btn-popup-wrapper">
+                            <div
+                                class="popup-btn-popup move-to-folders"
+                                style="--popup-width: 295px"
+                            >
+                                <div class="header">
+                                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1022_2923)">
+                                        <path d="M16.1387 2.61532H11.7704L9.32751 0.749934C9.23897 0.681844 9.12875 0.644541 9.01501 0.644165H1.90816C1.42514 0.644165 0.961898 0.827189 0.62035 1.15297C0.278802 1.47876 0.0869223 1.92062 0.0869223 2.38134V15.8717C0.0862101 15.9908 0.131871 16.1059 0.215059 16.1948C0.298246 16.2836 0.413037 16.3398 0.537191 16.3525H0.590954C0.706516 16.3521 0.818467 16.3141 0.908288 16.2447C0.998108 16.1753 1.06042 16.0788 1.08491 15.9711L3.14472 6.67622C3.18591 6.50311 3.28885 6.34902 3.43594 6.24029C3.58303 6.13155 3.76515 6.07492 3.95117 6.08006H17.4525C17.5862 6.08006 17.7144 6.02941 17.8089 5.93925C17.9034 5.84909 17.9565 5.7268 17.9565 5.59929V4.3525C17.9565 3.89232 17.7651 3.45095 17.4243 3.12526C17.0835 2.79957 16.6211 2.61617 16.1387 2.61532Z" fill="#425466"/>
+                                        <path d="M19.5198 5.77559C19.3492 5.57029 19.1321 5.40452 18.8848 5.29072C18.6375 5.17693 18.3663 5.11806 18.0917 5.11854H3.9519C3.53942 5.11761 3.13891 5.25076 2.8164 5.49605C2.49388 5.74133 2.26861 6.08412 2.17771 6.46789L0.114539 15.7628C0.0969867 15.8324 0.0959815 15.905 0.111596 15.975C0.127211 16.0451 0.159052 16.111 0.204789 16.1678C0.250526 16.2247 0.309004 16.271 0.375945 16.3035C0.442885 16.3361 0.516597 16.3539 0.591689 16.3557H16.4116C16.8244 16.3559 17.2249 16.2221 17.5474 15.9762C17.8698 15.7304 18.095 15.3872 18.1858 15.0031L19.8659 7.25315C19.9296 6.99796 19.9315 6.73229 19.8716 6.47628C19.8116 6.22027 19.6913 5.98065 19.5198 5.77559Z" fill="#6B7C8D"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1022_2923">
+                                        <rect width="20" height="16" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>Folder name</span>
+                                </div>
+                                <div class="folders-conatiner"></div>
+                                <div class="footer">
+                                    <span>New folder</span>
+                                    <div class="badge-btn">Move here</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="info-item popup-btn">
                         <span>Download</span>
                         <div class="popup-btn-popup-wrapper">
@@ -569,6 +613,64 @@
         </div>
     </div>
 
+    <div class="modal-wrapper edit-design-modal-wrapper hidden">
+        <div class="modal-content edit-design-modal">
+            <div class="modal-title">
+                <span>Edit Design</span>
+                <i class="bi close-btn bi-x"></i>
+            </div>
+            <div class="modal-main">
+                
+                <div class="edit-design-content">
+                    <div class="accordion-container">
+                        <div class="accordion-header">
+                            <i class="bi bi-gear-fill"></i>
+                            <span>Options</span>
+                            <i class="bi bi-plus-lg expand-btn"></i>
+                        </div>
+                        <div class="accordion-header">
+                            <i class="bi bi-image-fill"></i>
+                            <span>Logo</span>
+                            <i class="bi bi-plus-lg expand-btn"></i>
+                        </div>
+                        <div class="accordion-header">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 7.5C19 6.397 18.103 5.5 17 5.5H7V2.5H5V5.5H2V7.5H17V22.5H19V19.5H22V17.5H19V7.5Z" fill="#0A2540"/>
+                                <path d="M5 9.5V17.5C5 18.603 5.897 19.5 7 19.5H15V17.5H7V9.5H5Z" fill="#0A2540"/>
+                            </svg>                            
+                            <span>Frames</span>
+                            <i class="bi bi-plus-lg expand-btn"></i>
+                        </div>
+                    </div>
+                    <div class="qr-code-container">
+                        <svg width="153" height="152" viewBox="0 0 153 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M110.915 96.649H97.1485V82.8831H83.417V124.215H97.1485V137.947H110.915V96.649Z" fill="#E5E5E5"/>
+                            <path d="M124.681 137.947H110.915V151.713H124.681V137.947Z" fill="#E5E5E5"/>
+                            <path d="M152.179 137.947H138.413V151.713H152.179V137.947Z" fill="#E5E5E5"/>
+                            <path d="M152.212 82.8831H138.412V96.649H124.646V137.947H138.412V124.215H152.212V82.8831Z" fill="#E5E5E5"/>
+                            <path d="M97.183 137.947H83.417V151.713H97.183V137.947Z" fill="#E5E5E5"/>
+                            <path d="M42.1195 27.7848H28.3535V41.5508H42.1195V27.7848Z" fill="#E5E5E5"/>
+                            <path d="M0.787109 0.287231V69.117H69.5825V0.287231H0.787109ZM55.851 55.3167H14.5875V14.0532H55.8854V55.3167H55.851Z" fill="#E5E5E5"/>
+                            <path d="M124.68 27.7848H110.914V41.5508H124.68V27.7848Z" fill="#E5E5E5"/>
+                            <path d="M83.417 0.287231V69.117H152.212V0.287231H83.417ZM138.412 55.3167H97.1485V14.0532H138.446V55.3167H138.412Z" fill="#E5E5E5"/>
+                            <path d="M42.1195 110.381H28.3535V124.147H42.1195V110.381Z" fill="#E5E5E5"/>
+                            <path d="M0.787109 82.8831V151.713H69.5825V82.8831H0.787109ZM55.851 137.947H14.5875V96.649H55.8854V137.947H55.851Z" fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button class="badge-btn close-btn link">Cancel</button>
+                <button class="badge-btn">
+                    <span>Save</span>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/main.js"></script>
 </body>
