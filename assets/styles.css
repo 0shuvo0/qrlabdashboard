@@ -534,6 +534,23 @@ button {
   width: fit-content;
   margin-top: auto;
 }
+.generated-link-item .promo .promo-footer .badge-btn {
+  flex-grow: 0;
+  height: fit-content;
+}
+.generated-link-item .promo .promo-list-items {
+  margin-top: 0.5em;
+}
+.generated-link-item .promo .promo-list-items .promo-list-item {
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.generated-link-item .promo .promo-list-items .promo-list-item i {
+  font-size: 24px;
+}
 
 .popup-btn {
   position: relative;
@@ -849,6 +866,9 @@ button {
   }
   .generated-link-item .content .content-badge-btns {
     display: flex;
+  }
+  .generated-link-item .promo {
+    display: none !important;
   }
   .modal-wrapper {
     align-items: flex-end;
