@@ -154,6 +154,10 @@ button {
   font-size: 18px;
   font-weight: 700;
 }
+.sidebar-wrapper .sidebar-content .menu-group-heading.w-mb {
+  margin-bottom: 1em;
+  cursor: pointer;
+}
 .sidebar-wrapper .sidebar-content .menu-group {
   margin-bottom: 2em;
   padding-left: 1em;

@@ -139,6 +139,10 @@ button{
             color: var(--color-dark);
             font-size: 18px;
             font-weight: 700;
+            &.w-mb{
+                margin-bottom: 1em;
+                cursor: pointer;
+            }
         }
         .menu-group{
             margin-bottom: 2em;
