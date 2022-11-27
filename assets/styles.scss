@@ -57,7 +57,7 @@ button{
         color: var(--color-dark);
         letter-spacing: -0.04em;
         font-weight: 900;
-        font-size: 5.25em;
+        font-size: 4.5em;
         text-align: center;
         margin-top: auto;
         padding-bottom: .5em;
@@ -527,7 +527,7 @@ button{
         box-shadow: 0px 32px 90px rgba(0, 0, 0, 0.2);
         border-radius: 16px;
         color: var(--color-body);
-        animation: .2s popIn ease;
+        animation: .35s popIn ease;
         overflow: hidden;
     }
     .popup-btn-links{
@@ -561,7 +561,7 @@ button{
 }
 @keyframes popIn {
     from{
-        transform: scale(.9) translateY(5%);
+        transform: scale(.8) translateY(25%);
         opacity: .5;
     }
 }
