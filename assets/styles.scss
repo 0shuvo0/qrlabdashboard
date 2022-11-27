@@ -384,30 +384,29 @@ button{
     display: flex;
     position: relative;
     .qr-code-selected{
-        --size: 52px;
+        --size: 36px;
         height: var(--size);
         width: var(--size);
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.75em;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         background: #FAFAFA;
         border: 2px solid #425466;
         border-radius: 12px;
-        transform: translate(10px, 10px);
-        display: none;
+        transform: translate(-250px, 20px);
+        font-size: 2em;
+        // display: none;
         .icon{
             display: none;
             color: #fff;
-            margin-top: -10px;
         }
     }
-    &:hover .qr-code-selected{
-        display: flex;
-    }
+    // &:hover .qr-code-selected{
+    //     display: flex;
+    // }
     &.active .qr-code-selected{
         border: none;
         background-color: var(--color-primary);
@@ -843,8 +842,7 @@ button{
         }
         .qr-code-selected{
             display: flex;
-            left: auto !important;
-            right: 20px !important;
+            transform: translate(-20px, 20px);
         }
     }
     .edit-design-content{
