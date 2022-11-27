@@ -513,6 +513,7 @@ button {
   font-size: 14px;
   color: var(--color-primary);
   margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 .generated-link-item .promo .info {
   font-weight: 700;
@@ -528,7 +529,7 @@ button {
   font-size: 14px;
   margin-top: 0.5em;
 }
-.generated-link-item .promo .badge-btn {
+.generated-link-item .promo .promo-footer {
   flex-grow: 0;
   width: fit-content;
   margin-top: auto;

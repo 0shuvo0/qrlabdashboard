@@ -499,6 +499,7 @@ button{
             font-size: 14px;
             color: var(--color-primary);
             margin-bottom: .5em;
+            text-transform: uppercase;
         }
         .info{
             font-weight: 700;
@@ -514,7 +515,7 @@ button{
             font-size: 14px;
             margin-top: .5em;
         }
-        .badge-btn{
+        .promo-footer{
             flex-grow: 0;
             width: fit-content;
             margin-top: auto;
