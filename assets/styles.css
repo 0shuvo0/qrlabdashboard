@@ -243,6 +243,9 @@ button {
           align-items: center;
   gap: 1em;
 }
+.page-title.w-plus-btn {
+  gap: 0.5em;
+}
 
 .badge-btn {
   font-weight: 700;
@@ -262,6 +265,10 @@ button {
 }
 .badge-btn.delete {
   background-color: #CC686E;
+}
+.badge-btn.square {
+  border-radius: 5px;
+  padding: 0.35em 0.5em;
 }
 
 .dashboard-cards {
@@ -515,9 +522,9 @@ button {
   background: #FAFAFA;
   border: 2px solid #425466;
   border-radius: 12px;
-  -webkit-transform: translate(-250px, 20px);
-      -ms-transform: translate(-250px, 20px);
-          transform: translate(-250px, 20px);
+  -webkit-transform: translate(-270px, 20px);
+      -ms-transform: translate(-270px, 20px);
+          transform: translate(-270px, 20px);
   font-size: 2em;
 }
 .generated-link-item .qr-code-selected .icon {
@@ -622,7 +629,7 @@ button {
 .generated-link-item .promo {
   background: #F9F9FF;
   border-left: 1px solid #DFE4EA;
-  width: 230px;
+  width: 250px;
   padding: 1.4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,8 +665,8 @@ button {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  width: -moz-fit-content;
   width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: auto;
 }
@@ -667,8 +674,8 @@ button {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  height: -moz-fit-content;
   height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .generated-link-item .promo .promo-list-items {
@@ -691,11 +698,11 @@ button {
 
 .popup-btn {
   position: relative;
+  cursor: pointer;
 }
 .popup-btn .popup-btn-popup-wrapper {
-  padding-top: 2.5em;
   position: absolute;
-  top: 0;
+  top: 2.5em;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
@@ -704,7 +711,7 @@ button {
   z-index: 9;
   text-align: center;
 }
-.popup-btn:hover .popup-btn-popup-wrapper {
+.popup-btn.active .popup-btn-popup-wrapper {
   display: block;
 }
 .popup-btn .popup-btn-popup {
@@ -965,7 +972,7 @@ button {
 }
 
 .popup-btn.avatar .popup-btn-popup-wrapper {
-  padding-top: 3.5em;
+  padding-top: 1.5em;
 }
 
 @media (max-width: 1250px) {
@@ -997,7 +1004,7 @@ button {
   .page-content {
     margin-top: -250px;
   }
-  .page-title {
+  .page-title:not(.w-plus-btn) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1010,7 +1017,7 @@ button {
             align-items: flex-start;
     gap: 0;
   }
-  .page-title .badge-btn {
+  .page-title:not(.w-plus-btn) .badge-btn {
     margin-bottom: 1em;
   }
   .form-header .form-input {

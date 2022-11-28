@@ -178,6 +178,10 @@ button{
     display: flex;
     align-items: center;
     gap: 1em;
+    
+    &.w-plus-btn{
+        gap: .5em;
+    }
 }
 
 .badge-btn{
@@ -197,6 +201,10 @@ button{
     }
     &.delete{
         background-color: #CC686E;
+    }
+    &.square{
+        border-radius: 5px;
+        padding: .35em .5em;
     }
 }
 
@@ -396,7 +404,7 @@ button{
         background: #FAFAFA;
         border: 2px solid #425466;
         border-radius: 12px;
-        transform: translate(-250px, 20px);
+        transform: translate(-270px, 20px);
         font-size: 2em;
         // display: none;
         .icon{
@@ -488,7 +496,7 @@ button{
     .promo{
         background: #F9F9FF;
         border-left: 1px solid #DFE4EA;
-        width: 230px;
+        width: 250px;
         padding: 1.4em;
         display: flex;
         flex-direction: column;
@@ -541,17 +549,21 @@ button{
 
 .popup-btn{
     position: relative;
+    cursor: pointer;
     .popup-btn-popup-wrapper{
-        padding-top: 2.5em;
+        // padding-top: 2.5em;
         position: absolute;
-        top: 0;
+        top: 2.5em;
         left: 50%;
         transform: translate(-50%, 0);
         display: none;
         z-index: 9;
         text-align: center;
     }
-    &:hover .popup-btn-popup-wrapper{
+    // &:hover .popup-btn-popup-wrapper{
+    //     display: block;
+    // }
+    &.active .popup-btn-popup-wrapper{
         display: block;
     }
     .popup-btn-popup{
@@ -775,7 +787,7 @@ button{
 }
 .popup-btn.avatar{
     .popup-btn-popup-wrapper{
-        padding-top: 3.5em;
+        padding-top: 1.5em;
     }
 }
 
@@ -808,7 +820,7 @@ button{
     .page-content{
         margin-top: -250px;
     }
-    .page-title{
+    .page-title:not(.w-plus-btn){
         display: flex;
         flex-flow: column;
         align-items: flex-start;

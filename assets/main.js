@@ -1,1 +1,60 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))f(t);new MutationObserver(t=>{for(const d of t)if(d.type==="childList")for(const s of d.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&f(s)}).observe(document,{childList:!0,subtree:!0});function u(t){const d={};return t.integrity&&(d.integrity=t.integrity),t.referrerpolicy&&(d.referrerPolicy=t.referrerpolicy),t.crossorigin==="use-credentials"?d.credentials="include":t.crossorigin==="anonymous"?d.credentials="omit":d.credentials="same-origin",d}function f(t){if(t.ep)return;t.ep=!0;const d=u(t);fetch(t.href,d)}})();const o=(e,n=document)=>n.querySelector(e),i=(e,n=document)=>[...n.querySelectorAll(e)],p=i(".generated-link-item .badge-btn.edit .popup-btn-link:first-child"),h=i(".generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)"),m=i(".generated-link-item .badge-btn.edit .popup-btn-link:nth-child(3)"),L=o(".add-new-folder-btn"),c=o(".edit-info-modal-wrapper"),l=o(".edit-design-modal-wrapper"),r=o(".delete-modal-wrapper"),a=o(".add-new-folder-modal-wrapper");i(".close-btn",c).forEach(e=>{e.addEventListener("click",()=>{c.classList.add("hidden")})});i(".close-btn",l).forEach(e=>{e.addEventListener("click",()=>{l.classList.add("hidden")})});i(".close-btn",r).forEach(e=>{e.addEventListener("click",()=>{r.classList.add("hidden")})});i(".close-btn",a).forEach(e=>{e.addEventListener("click",()=>{a.classList.add("hidden")})});p.forEach(e=>{e.addEventListener("click",()=>{c.classList.remove("hidden")})});h.forEach(e=>{e.addEventListener("click",()=>{l.classList.remove("hidden")})});m.forEach(e=>{e.addEventListener("click",()=>{r.classList.remove("hidden")})});L.addEventListener("click",()=>{a.classList.remove("hidden")});o(".info-item.delete").addEventListener("click",()=>{r.classList.remove("hidden")});
+const $ = (v, p = document) => p.querySelector(v)
+const $$ = (v, p = document) => [...p.querySelectorAll(v)]
+
+
+const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:first-child')
+const qrCodeEditDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)')
+const qrCodeDeleteDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(3)')
+const addNewFolderBtn = $('.add-new-folder-btn')
+
+const editInfoModal= $('.edit-info-modal-wrapper')
+const editDesignModal= $('.edit-design-modal-wrapper')
+const deleteQRCodesModal= $('.delete-modal-wrapper')
+const addNewFolderModal= $('.add-new-folder-modal-wrapper')
+
+
+$$('.close-btn', editInfoModal).forEach(btn => {
+    btn.addEventListener('click', () => {
+        editInfoModal.classList.add('hidden')
+    })
+})
+$$('.close-btn', editDesignModal).forEach(btn => {
+    btn.addEventListener('click', () => {
+        editDesignModal.classList.add('hidden')
+    })
+})
+$$('.close-btn', deleteQRCodesModal).forEach(btn => {
+    btn.addEventListener('click', () => {
+        deleteQRCodesModal.classList.add('hidden')
+    })
+})
+$$('.close-btn', addNewFolderModal).forEach(btn => {
+    btn.addEventListener('click', () => {
+        addNewFolderModal.classList.add('hidden')
+    })
+})
+
+
+
+qrCodeEditInfoBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        editInfoModal.classList.remove('hidden')
+    })
+})
+qrCodeEditDesignBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        editDesignModal.classList.remove('hidden')
+    })
+})
+qrCodeDeleteDesignBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        deleteQRCodesModal.classList.remove('hidden')
+    })
+})
+addNewFolderBtn.addEventListener('click', () => {
+    addNewFolderModal.classList.remove('hidden')
+})
+
+$('.info-item.delete').addEventListener('click', () => {
+    deleteQRCodesModal.classList.remove('hidden')
+})
