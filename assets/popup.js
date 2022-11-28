@@ -1,7 +1,7 @@
 const _$ = (v, p = document) => p.querySelector(v)
 const _$$ = (v, p = document) => [...p.querySelectorAll(v)]
 
-const popupBtns = _$$('.popup-btn')
+const popupBtns = _$$('.popup-btn.click-to-open')
 
 let activePopupEl = null;
 

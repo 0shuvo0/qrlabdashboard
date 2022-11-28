@@ -562,9 +562,9 @@ button{
         z-index: 9;
         text-align: center;
     }
-    // &:hover .popup-btn-popup-wrapper{
-    //     display: block;
-    // }
+    &:not(.click-to-open):hover .popup-btn-popup-wrapper{
+        display: block;
+    }
     &.active .popup-btn-popup-wrapper{
         display: block;
     }
