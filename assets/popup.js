@@ -7,6 +7,7 @@ let activePopupEl = null;
 
 popupBtns.forEach(btn => {
     btn.addEventListener('click', e => {
+        if(e.target.innerText !== 'Move') return
         if(btn.classList.contains('active')){
             btn.classList.remove('active')
             activePopupEl = null
@@ -17,10 +18,11 @@ popupBtns.forEach(btn => {
     })
 })
 
-window.addEventListener('click', e => {
-    // console.log(e.target === activePopupEl);
-    if(activePopupEl){
-        activePopupEl.classList.remove('active')
-        activePopupEl = null
-    }
-})
+// window.addEventListener('click', e => {
+//     // console.log(e.target === activePopupEl);
+//     if(activePopupEl){
+//         activePopupEl.classList.remove('active')
+//         activePopupEl = null
+//     }
+//     console.log(e.path[0]);
+// })

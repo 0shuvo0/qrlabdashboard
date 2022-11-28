@@ -992,9 +992,6 @@ button {
 .move-to-folders .footer .badge-btn {
   font-size: 13px;
 }
-.move-to-folders .folders-conatiner {
-  padding: 0.5em 0;
-}
 .move-to-folders .folders-conatiner .folder-list-item {
   padding: 0.5em 1.5em;
   display: -webkit-box;
@@ -1004,6 +1001,10 @@ button {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
+  border-bottom: 1px solid #DFE4EA;
+}
+.move-to-folders .folders-conatiner .folder-list-item:last-child {
+  border-bottom: none;
 }
 .move-to-folders .folders-conatiner .folder-list-item .title {
   font-weight: 700;
