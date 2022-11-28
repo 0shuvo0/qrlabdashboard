@@ -72,6 +72,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 1;
 }
 .page-hero .bg-gradient {
   min-width: 100%;
@@ -228,6 +229,7 @@ button {
 }
 .page-content {
   margin-top: 4em;
+  z-index: 3;
 }
 
 .page-title {
