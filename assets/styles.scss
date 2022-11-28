@@ -31,8 +31,14 @@ button{
     border: none;
     outline: none;
 }
+.mt-05{
+    margin-top: .5em;
+}
 .mt-1{
     margin-top: 1em;
+}
+.mt-105{
+    margin-top: 1.5em;
 }
 .mt-025{
     margin-top: .52em;
@@ -349,6 +355,14 @@ button{
     }
     .form-content{
         padding: 1em;
+        .form-bread-crumb{
+            margin-bottom: 1em;
+            font-weight: 700;
+            font-size: 14px;
+            .folder-name{
+                color: var(--color-primary);
+            }
+        }
     }
     .form-btns{
         display: flex;
@@ -374,6 +388,10 @@ button{
         &.add{
             background-color: var(--color-primary);
             color: #fff;
+        }
+        &.active{
+            border: 2px solid var(--color-primary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
     }
 }
@@ -693,7 +711,7 @@ button{
         }
         .title{
             font-weight: 700;
-            font-size: 42px;
+            font-size: 28px;
         }
         .info-small{
             font-weight: 700;
@@ -778,7 +796,29 @@ button{
         }
     }
     .folders-conatiner{
-        height: 100px;
+        padding: .5em 0;
+        .folder-list-item{
+            padding: .5em 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            .title{
+                font-weight: 700;
+            }
+            .count{
+                font-size: 12px;
+                letter-spacing: -0.04em;
+                font-weight: 500;
+                margin-left: auto;
+            }
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.01);
+            }
+            &.active{
+                background-color: rgba(82, 97, 245, .1);
+                color: var(--color-primary);
+            }
+        }
     }
 }
 

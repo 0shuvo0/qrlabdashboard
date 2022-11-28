@@ -49,8 +49,16 @@ button {
   outline: none;
 }
 
+.mt-05 {
+  margin-top: 0.5em;
+}
+
 .mt-1 {
   margin-top: 1em;
+}
+
+.mt-105 {
+  margin-top: 1.5em;
 }
 
 .mt-025 {
@@ -442,6 +450,14 @@ button {
 .qrcode-form .form-content {
   padding: 1em;
 }
+.qrcode-form .form-content .form-bread-crumb {
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-size: 14px;
+}
+.qrcode-form .form-content .form-bread-crumb .folder-name {
+  color: var(--color-primary);
+}
 .qrcode-form .form-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,6 +495,11 @@ button {
 .qrcode-form .form-btn.add {
   background-color: var(--color-primary);
   color: #fff;
+}
+.qrcode-form .form-btn.active {
+  border: 2px solid var(--color-primary);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .generated-links-container {
@@ -863,7 +884,7 @@ button {
 }
 .modal-wrapper .modal-content .title {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 28px;
 }
 .modal-wrapper .modal-content .info-small {
   font-weight: 700;
@@ -972,7 +993,33 @@ button {
   font-size: 13px;
 }
 .move-to-folders .folders-conatiner {
-  height: 100px;
+  padding: 0.5em 0;
+}
+.move-to-folders .folders-conatiner .folder-list-item {
+  padding: 0.5em 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.move-to-folders .folders-conatiner .folder-list-item .title {
+  font-weight: 700;
+}
+.move-to-folders .folders-conatiner .folder-list-item .count {
+  font-size: 12px;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  margin-left: auto;
+}
+.move-to-folders .folders-conatiner .folder-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.move-to-folders .folders-conatiner .folder-list-item.active {
+  background-color: rgba(82, 97, 245, 0.1);
+  color: var(--color-primary);
 }
 
 .container {

@@ -6,11 +6,15 @@ const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-l
 const qrCodeEditDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)')
 const qrCodeDeleteDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(3)')
 const addNewFolderBtn = $('.add-new-folder-btn')
+const tryDynamicFreeBtns = $$('.try-dynamic-free-btn')
+const formBtns = $$('.form-btns .form-btn:not(.add-new-folder-btn')
+console.log(formBtns);
 
 const editInfoModal= $('.edit-info-modal-wrapper')
 const editDesignModal= $('.edit-design-modal-wrapper')
 const deleteQRCodesModal= $('.delete-modal-wrapper')
 const addNewFolderModal= $('.add-new-folder-modal-wrapper')
+const tryDynamicSuccessModal = $('.try-dynamic-success-modal-wrapper')
 
 
 $$('.close-btn', editInfoModal).forEach(btn => {
@@ -46,6 +50,11 @@ qrCodeEditDesignBtns.forEach(btn => {
         editDesignModal.classList.remove('hidden')
     })
 })
+tryDynamicFreeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        tryDynamicSuccessModal.classList.remove('hidden')
+    })
+})
 qrCodeDeleteDesignBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         deleteQRCodesModal.classList.remove('hidden')
@@ -57,4 +66,24 @@ addNewFolderBtn.addEventListener('click', () => {
 
 $('.info-item.delete').addEventListener('click', () => {
     deleteQRCodesModal.classList.remove('hidden')
+})
+
+
+const resetSelectedFolder = folderName => {
+    formBtns.forEach(btn => btn.classList.remove('active'))
+    $$('.folder-list .folder-list-item').forEach(item => {
+        item.classList.remove('active')
+        if(($('.title', item)).innerText === folderName){
+            item.classList.add('active')
+        }
+    })
+}
+
+formBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const folderName = $('span', btn).innerText
+        resetSelectedFolder(folderName)
+        btn.classList.add('active')
+        $('.selected-folder-name').innerText = folderName
+    })
 })
