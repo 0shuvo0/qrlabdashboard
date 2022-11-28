@@ -553,14 +553,18 @@ button{
     position: relative;
     cursor: pointer;
     .popup-btn-popup-wrapper{
-        // padding-top: 2.5em;
+        padding-top: 2.5em;
         position: absolute;
-        top: 2.5em;
+        top: 0;
         left: 50%;
         transform: translate(-50%, 0);
         display: none;
         z-index: 9;
         text-align: center;
+    }
+    &.click-to-open .popup-btn-popup-wrapper{
+        padding-top: 0;
+        top: 2.5em;
     }
     &:not(.click-to-open):hover .popup-btn-popup-wrapper{
         display: block;

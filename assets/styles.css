@@ -703,8 +703,9 @@ button {
   cursor: pointer;
 }
 .popup-btn .popup-btn-popup-wrapper {
+  padding-top: 2.5em;
   position: absolute;
-  top: 2.5em;
+  top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
@@ -712,6 +713,10 @@ button {
   display: none;
   z-index: 9;
   text-align: center;
+}
+.popup-btn.click-to-open .popup-btn-popup-wrapper {
+  padding-top: 0;
+  top: 2.5em;
 }
 .popup-btn:not(.click-to-open):hover .popup-btn-popup-wrapper {
   display: block;
