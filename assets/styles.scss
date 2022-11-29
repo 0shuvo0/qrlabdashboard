@@ -592,6 +592,9 @@ button{
     &.active .popup-btn-popup-wrapper{
         display: block;
     }
+    .popup-close-btn{
+        cursor: pointer;
+    }
     .popup-btn-popup{
         width: var(--popup-width, 150px);
         background-color: #FFFFFF;
@@ -780,6 +783,7 @@ button{
         font-size: 14px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         svg{
             margin-right: .75em;
         }
@@ -791,7 +795,6 @@ button{
         border-bottom: none;
         border-top: 1px solid #DFE4EA;
         gap: 1em;
-        justify-content: space-between;
         font-size: 13px;
         .badge-btn{
             font-size: 13px;

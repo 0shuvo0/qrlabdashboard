@@ -16,6 +16,13 @@ popupBtns.forEach(btn => {
             setTimeout(() => activePopupEl = btn, 100)
         }
     })
+    const closeBtns = _$$('.popup-close-btn', btn)
+    closeBtns.forEach(b => {
+        b.addEventListener('click', () => {
+            btn.classList.remove('active')
+            activePopupEl = null
+        })
+    })
 })
 
 // window.addEventListener('click', e => {

@@ -749,6 +749,9 @@ button {
 .popup-btn.active .popup-btn-popup-wrapper {
   display: block;
 }
+.popup-btn .popup-close-btn {
+  cursor: pointer;
+}
 .popup-btn .popup-btn-popup {
   width: var(--popup-width, 150px);
   background-color: #FFFFFF;
@@ -977,6 +980,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .move-to-folders .header svg, .move-to-folders .footer svg {
   margin-right: 0.75em;
@@ -988,9 +994,6 @@ button {
   border-bottom: none;
   border-top: 1px solid #DFE4EA;
   gap: 1em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-size: 13px;
 }
 .move-to-folders .footer .badge-btn {

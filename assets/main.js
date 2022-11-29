@@ -8,7 +8,6 @@ const qrCodeDeleteDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-b
 const addNewFolderBtn = $('.add-new-folder-btn')
 const tryDynamicFreeBtns = $$('.try-dynamic-free-btn')
 const formBtns = $$('.form-btns .form-btn:not(.add-new-folder-btn')
-console.log(formBtns);
 
 const editInfoModal= $('.edit-info-modal-wrapper')
 const editDesignModal= $('.edit-design-modal-wrapper')
