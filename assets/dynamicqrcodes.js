@@ -2,9 +2,9 @@ const $ = (v, p = document) => p.querySelector(v)
 const $$ = (v, p = document) => [...p.querySelectorAll(v)]
 
 
-const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:first-child')
-const qrCodeEditDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)')
-const qrCodeDeleteDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(4)')
+const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)')
+const qrCodeEditDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(3)')
+const qrCodeDeleteDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(5)')
 const addNewFolderBtn = $('.add-new-folder-btn')
 const tryDynamicFreeBtns = $$('.try-dynamic-free-btn')
 const formBtns = $$('.form-btns .form-btn:not(.add-new-folder-btn')
