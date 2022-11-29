@@ -722,6 +722,37 @@ button {
 .generated-link-item .promo .promo-list-items .promo-list-item i {
   font-size: 24px;
 }
+.generated-link-item .info-message {
+  background-color: #E4F3DD;
+  border-radius: 6px;
+  padding: 5px 5px 5px 12px;
+  margin-bottom: 0.5em;
+  color: #5A6F50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5em 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.generated-link-item .info-message .info-btn {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 4px 8px;
+  letter-spacing: -0.015em;
+  color: #5A6F50;
+  font-weight: 700;
+}
+.generated-link-item .info-message.danger {
+  background-color: #CC686E;
+  color: #fff;
+}
+.generated-link-item .info-message.danger .info-btn {
+  color: #fff;
+}
 
 .popup-btn {
   position: relative;
@@ -1195,5 +1226,10 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .info-message {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }

@@ -567,6 +567,32 @@ button{
             }
         }
     }
+    .info-message{
+        background-color: #E4F3DD;
+        border-radius: 6px;
+        padding: 5px 5px 5px 12px;
+        margin-bottom: .5em;
+        color: #5A6F50;
+        display: flex;
+        gap: .5em 1em;
+        align-items: center;
+        flex-wrap: wrap;
+        .info-btn{
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            padding: 4px 8px;
+            letter-spacing: -0.015em;
+            color: #5A6F50;
+            font-weight: 700;
+        }
+        &.danger{
+            background-color: #CC686E;
+            color: #fff;
+            .info-btn{
+                color: #fff;
+            }
+        }
+    }
 }
 
 .popup-btn{
@@ -961,6 +987,9 @@ button{
     }
     .form-btns{
         justify-content: center;
+    }
+    .info-message{
+        justify-content: space-between;
     }
 }
 // Media queries
