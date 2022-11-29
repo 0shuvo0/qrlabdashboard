@@ -462,6 +462,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   gap: 1em;
 }
 .qrcode-form .form-btn {
@@ -1128,6 +1132,12 @@ button {
   .edit-design-content .accordion-container {
     grid-area: settings;
   }
+  .page-title .badge-btn .popup-btn-popup-wrapper {
+    left: 100%;
+    -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
 }
 @media (max-width: 776px) {
   .edit-design-content .qr-code-container {
@@ -1177,5 +1187,10 @@ button {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding-bottom: 5em;
+  }
+  .form-btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

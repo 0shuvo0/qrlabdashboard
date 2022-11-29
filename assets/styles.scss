@@ -366,6 +366,8 @@ button{
     }
     .form-btns{
         display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
         gap: 1em;
     }
     .form-btn{
@@ -918,6 +920,10 @@ button{
             grid-area: settings;
         }
     }
+    .page-title .badge-btn .popup-btn-popup-wrapper{
+        left: 100%;
+        transform: translate(-100%, 0);
+    }
 }
 @media(max-width: 576px){
     .generated-link-item{
@@ -949,6 +955,9 @@ button{
             border-bottom-right-radius: 0;
             padding-bottom: 5em;
         }
+    }
+    .form-btns{
+        justify-content: center;
     }
 }
 // Media queries
