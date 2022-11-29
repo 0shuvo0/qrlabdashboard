@@ -168,8 +168,8 @@
                     <input type="text" placeholder="Type to search">
                     <i class="bi bi-search search-icon"></i>
                 </div>
-                <div class="selection-info">
-                    <div class="selected-text">1 selected</div>
+                <div class="selection-info when-selections hidden">
+                    <div class="selected-text">2 selected</div>
                     <div class="info-item popup-btn click-to-open">
                         <span>Move</span>
                         <div class="popup-btn-popup-wrapper">
@@ -257,6 +257,12 @@
                     </div>
                     <div class="info-item delete">Delete</div>
                 </div>
+                <div class="selection-info when-no-selections">
+                    <div class="selected-text">0 selected</div>
+                    <div class="info-item select-all-qr-codes-btn">
+                        <span>Select all</span>
+                    </div>
+                </div>
             </div>
             <div class="form-content">
                 <div class="form-bread-crumb">
@@ -272,26 +278,19 @@
                         <span>New folder</span>
                     </div>
                     <div class="form-btn active">
-                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_14_2)">
-                            <path d="M37.8181 33.0909H33.0909V28.3636H28.3755V42.5571H33.0909V47.2728H37.8181V33.0909Z" fill="#555555"/>
-                            <path d="M42.5453 47.2725H37.8177V52H42.5453V47.2725Z" fill="#555555"/>
-                            <path d="M51.9878 47.2725H47.2606V52H51.9878V47.2725Z" fill="#555555"/>
-                            <path d="M51.9997 28.3636H47.2606V33.0909H42.5334V47.2728H47.2606V42.5571H51.9997V28.3636Z" fill="#555555"/>
-                            <path d="M33.1028 47.2725H28.3755V52H33.1028V47.2725Z" fill="#555555"/>
-                            <path d="M14.1936 9.44263H9.46631V14.1699H14.1936V9.44263Z" fill="#555555"/>
-                            <path d="M0 0V23.6363H23.6245V0H0ZM18.9091 18.8972H4.73909V4.72728H18.9209V18.8972H18.9091Z" fill="#555555"/>
-                            <path d="M42.5457 9.44263H37.8181V14.1699H42.5457V9.44263Z" fill="#555555"/>
-                            <path d="M28.3755 0V23.6363H52V0H28.3755ZM47.261 18.8972H33.0909V4.72728H47.2728V18.8972H47.261Z" fill="#555555"/>
-                            <path d="M14.1936 37.8063H9.46631V42.5334H14.1936V37.8063Z" fill="#555555"/>
-                            <path d="M0 28.3636V52H23.6245V28.3636H0ZM18.9091 47.2728H4.73909V33.0909H18.9209V47.2728H18.9091Z" fill="#555555"/>
+                        <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1102_1036)">
+                            <rect y="4.78516" width="24.1619" height="24.1619" rx="2.80952" fill="#6B7C8D"/>
+                            <rect y="32.8801" width="24.1619" height="24.1619" rx="2.80952" fill="#6B7C8D"/>
+                            <rect x="24.7769" y="17.9897" width="24.1619" height="24.1619" rx="2.80952" transform="rotate(-45 24.7769 17.9897)" fill="#6B7C8D"/>
+                            <rect x="29.2191" y="32.8801" width="24.1619" height="24.1619" rx="2.80952" fill="#6B7C8D"/>
                             </g>
                             <defs>
-                            <clipPath id="clip0_14_2">
-                            <rect width="52" height="52" fill="white"/>
+                            <clipPath id="clip0_1102_1036">
+                            <rect width="59" height="56.1905" fill="white" transform="translate(0 0.904785)"/>
                             </clipPath>
                             </defs>
-                            </svg>                                                                      
+                        </svg>                                                                                              
                         <span>All</span>
                     </div>
                     <div class="form-btn">
@@ -330,9 +329,7 @@
             <div class="generated-link-item">
                 <div class="qr-code-selected">
                     <span class="icon">
-                        <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.40259 9.83085L10.1564 18.5847C10.3281 18.7563 10.6062 18.757 10.7787 18.5861L28.3567 1.17383" stroke="#DFE4EA" stroke-width="2.20536" stroke-linecap="round"/>
-                        </svg>                                       
+                        <i class="bi bi-check"></i>                                     
                     </span>
                 </div>
                 <div class="content">
@@ -353,7 +350,7 @@
                             </svg>
                         </div>
                         <div class="badge-btn edit popup-btn">
-                            <span>Edit</span>
+                            <span>Manage</span>
                             <i class="bi bi-chevron-right"></i>
                             <div class="popup-btn-popup-wrapper">
                                 <div
@@ -418,7 +415,7 @@
                         <p class="create-date">Link created 9 November 2022</p>
                         <div class="content-badge-btns">
                             <div class="badge-btn edit popup-btn">
-                                <span>Edit</span>
+                                <span>Manage</span>
                                 <i class="bi bi-chevron-right"></i>
                                 <div class="popup-btn-popup-wrapper">
                                     <div
@@ -476,8 +473,7 @@
                         </div>
                         <p class="scan-count-text">Number of scans</p>
                         <p class="upgrade-text">
-                            <i class="bi bi-question-circle-fill"></i>
-                            <span>Upgrade to track scans</span>
+                            <span class="num">134</span>
                         </p>
                     </div>
                 </div>
@@ -508,7 +504,7 @@
                     </div>
                 </div>
             </div>
-            <div class="generated-link-item active">
+            <div class="generated-link-item">
                 <div class="qr-code-selected">
                     <span class="icon">
                         <i class="bi bi-check"></i>                                    
@@ -531,8 +527,8 @@
                                 <path d="M-0.00012207 76.3638V140H63.6043V76.3638H-0.00012207ZM50.9089 127.273H12.759V89.091H50.9407V127.273H50.9089Z" fill="#E5E5E5"/>
                             </svg>
                         </div>
-                        <div class="badge-btn edit popup-btn">
-                            <span>Edit</span>
+                        <div class="badge-btn edit disabled popup-btn">
+                            <span>Manage</span>
                             <i class="bi bi-chevron-right"></i>
                             <div class="popup-btn-popup-wrapper">
                                 <div
@@ -590,14 +586,14 @@
                     </div>
                     <div>
                         <div class="info-message danger">
-                            <span>Trial expired. Upgrade to reactivate</span>
+                            <span>Expired. Upgrade to reactivate</span>
                             <div class="info-btn">Upgrade now</div>
                         </div>
                         <p class="title">My website</p>
                         <p class="create-date">Link created 9 November 2022</p>
                         <div class="content-badge-btns">
-                            <div class="badge-btn edit popup-btn">
-                                <span>Edit</span>
+                            <div class="badge-btn edit disabled popup-btn">
+                                <span>Manage</span>
                                 <i class="bi bi-chevron-right"></i>
                                 <div class="popup-btn-popup-wrapper">
                                     <div
@@ -655,8 +651,181 @@
                         </div>
                         <p class="scan-count-text">Number of scans</p>
                         <p class="upgrade-text">
-                            <i class="bi bi-question-circle-fill"></i>
-                            <span>Upgrade to track scans</span>
+                            <span class="num">134</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="promo">
+                    <p class="title">Add NFC</p>
+                    <div class="promo-list-items">
+                        <div class="promo-list-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Faster, no scans</span>
+                        </div>
+                        <div class="promo-list-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Batch creation</span>
+                        </div>
+                        <div class="promo-list-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>High security</span>
+                        </div>
+                    </div>
+                    <!-- <p class="info">Track the number of times your QR code is scanned.</p>
+                    <p class="secondary-info">Plus more features & insights.</p> -->
+                    <div class="promo-footer">
+                        <a href="#" class="badge-btn try-dynamic-free-btn">
+                            <span>Try it free</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <p class="info-no-ccr">No card details required</p>
+                    </div>
+                </div>
+            </div>
+            <div class="generated-link-item">
+                <div class="qr-code-selected">
+                    <span class="icon">
+                        <i class="bi bi-check"></i>                                    
+                    </span>
+                </div>
+                <div class="content">
+                    <div class="qr-code-container">
+                        <div class="qr-code">
+                            <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M101.818 89.091H89.0907V76.3638H76.3953V114.577H89.0907V127.273H101.818V89.091Z" fill="#E5E5E5"/>
+                                <path d="M114.545 127.272H101.818V140H114.545V127.272Z" fill="#E5E5E5"/>
+                                <path d="M139.968 127.272H127.24V140H139.968V127.272Z" fill="#E5E5E5"/>
+                                <path d="M139.999 76.3638H127.24V89.091H114.513V127.273H127.24V114.577H139.999V76.3638Z" fill="#E5E5E5"/>
+                                <path d="M89.1225 127.272H76.3953V140H89.1225V127.272Z" fill="#E5E5E5"/>
+                                <path d="M38.2135 25.4226H25.4863V38.1499H38.2135V25.4226Z" fill="#E5E5E5"/>
+                                <path d="M0 0V63.6363H63.6045V0H0ZM50.909 50.8772H12.7591V12.7273H50.9408V50.8772H50.909Z" fill="#E5E5E5"/>
+                                <path d="M114.545 25.4226H101.818V38.1499H114.545V25.4226Z" fill="#E5E5E5"/>
+                                <path d="M76.3953 0V63.6363H140V0H76.3953ZM127.241 50.8772H89.0907V12.7273H127.272V50.8772H127.241Z" fill="#E5E5E5"/>
+                                <path d="M38.2135 101.786H25.4863V114.513H38.2135V101.786Z" fill="#E5E5E5"/>
+                                <path d="M-0.00012207 76.3638V140H63.6043V76.3638H-0.00012207ZM50.9089 127.273H12.759V89.091H50.9407V127.273H50.9089Z" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                        <div class="badge-btn edit popup-btn">
+                            <span>Manage</span>
+                            <i class="bi bi-chevron-right"></i>
+                            <div class="popup-btn-popup-wrapper">
+                                <div
+                                    class="popup-btn-popup"
+                                    style="--popup-width: 160px"
+                                >
+                                    <div class="popup-btn-links">
+                                        <div class="popup-btn-links">
+                                            <div class="popup-btn-link">
+                                                <i class="bi bi-pencil-square"></i>
+                                                <span>Edit info</span>
+                                            </div>
+                                            <div class="popup-btn-link">
+                                                <i class="bi bi-brush"></i>
+                                                <span>Edit design</span>
+                                            </div>
+                                            <div class="popup-btn-link">
+                                                <i class="bi bi-lightning-charge-fill"></i>
+                                                <span>Make static</span>
+                                            </div>
+                                            <div class="popup-btn-link delete">
+                                                <i class="bi bi-trash"></i>
+                                                <span>Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="badge-btn download popup-btn">
+                            <span>Download</span>
+                            <i class="bi bi-chevron-right"></i>
+                            <div class="popup-btn-popup-wrapper">
+                                <div
+                                    class="popup-btn-popup"
+                                    style="--popup-width: 160px"
+                                >
+                                    <div class="popup-btn-links">
+                                        <a href="#" class="popup-btn-link">
+                                            <span>PNG</span>
+                                            <i class="bi m-inverse bi-chevron-right"></i>
+                                        </a>
+                                        <a href="#" class="popup-btn-link">
+                                            <span>SVG</span>
+                                            <i class="bi m-inverse bi-chevron-right"></i>
+                                        </a>
+                                        <a href="#" class="popup-btn-link">
+                                            <span>PDF</span>
+                                            <i class="bi m-inverse bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="title">My website</p>
+                        <p class="create-date">Link created 9 November 2022</p>
+                        <div class="content-badge-btns">
+                            <div class="badge-btn edit popup-btn">
+                                <span>Manage</span>
+                                <i class="bi bi-chevron-right"></i>
+                                <div class="popup-btn-popup-wrapper">
+                                    <div
+                                        class="popup-btn-popup"
+                                        style="--popup-width: 160px"
+                                    >
+                                        <div class="popup-btn-links">
+                                            <div class="popup-btn-links">
+                                                <div class="popup-btn-link">
+                                                    <i class="bi bi-pencil-square"></i>
+                                                    <span>Edit info</span>
+                                                </div>
+                                                <div class="popup-btn-link">
+                                                    <i class="bi bi-brush"></i>
+                                                    <span>Edit design</span>
+                                                </div>
+                                                <div class="popup-btn-link">
+                                                    <i class="bi bi-brush"></i>
+                                                    <span>Make static</span>
+                                                </div>
+                                                <div class="popup-btn-link delete">
+                                                    <i class="bi bi-trash"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="badge-btn download popup-btn">
+                                <span>Download</span>
+                                <i class="bi bi-chevron-right"></i>
+                                <div class="popup-btn-popup-wrapper">
+                                    <div
+                                        class="popup-btn-popup"
+                                        style="--popup-width: 160px"
+                                    >
+                                        <div class="popup-btn-links">
+                                            <a href="#" class="popup-btn-link">
+                                                <span>PNG</span>
+                                                <i class="bi m-inverse bi-chevron-right"></i>
+                                            </a>
+                                            <a href="#" class="popup-btn-link">
+                                                <span>SVG</span>
+                                                <i class="bi m-inverse bi-chevron-right"></i>
+                                            </a>
+                                            <a href="#" class="popup-btn-link">
+                                                <span>PDF</span>
+                                                <i class="bi m-inverse bi-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="scan-count-text">Number of scans</p>
+                        <p class="upgrade-text">
+                            <span class="num">134</span>
                         </p>
                     </div>
                 </div>

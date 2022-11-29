@@ -16,6 +16,10 @@
 html, body{
     min-height: 100vh;
 }
+.no-scroll{
+    height: 10vh;
+    overflow: hidden;
+}
 body{
     font-size: 16px;
     font-family: 'Satoshi', sans-serif;
@@ -45,6 +49,9 @@ button{
 }
 .d-block{
     display: block !important;
+}
+.hidden{
+    display: none !important;
 }
 .page-hero{
     height: 257px;
@@ -509,6 +516,9 @@ button{
         display: flex;
         align-items: center;
         gap: .5em;
+        .num{
+            font-size: 28px;
+        }
         cursor: pointer;
         i{
             color: #363636;
@@ -857,7 +867,10 @@ button{
 }
 
 
-
+.badge-btn.disabled{
+    background-color: #AAAAAA !important;
+    pointer-events: none;
+}
 
 
 .container{

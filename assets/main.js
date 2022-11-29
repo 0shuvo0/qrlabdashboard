@@ -86,3 +86,9 @@ formBtns.forEach(btn => {
         $('.selected-folder-name').innerText = folderName
     })
 })
+
+$('.select-all-qr-codes-btn').addEventListener('click', () => {
+    $('.when-no-selections').classList.add('hidden')
+    $('.when-selections').classList.remove('hidden')
+    $$('.generated-link-item').forEach(i => i.classList.add('active'))
+})

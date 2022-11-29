@@ -25,6 +25,17 @@ popupBtns.forEach(btn => {
     })
 })
 
+
+window.addEventListener('click', () => {
+    const hasModal = _$('.modal-wrapper:not(.hidden)')
+    const html = document.documentElement
+    if(hasModal){
+        if(!html.classList.contains('no-scroll')) html.classList.add('no-scroll')
+    }else{
+        if(html.classList.contains('no-scroll')) html.classList.remove('no-scroll')
+    }
+})
+
 // window.addEventListener('click', e => {
 //     // console.log(e.target === activePopupEl);
 //     if(activePopupEl){

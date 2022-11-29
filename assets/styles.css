@@ -26,6 +26,11 @@ html, body {
   min-height: 100vh;
 }
 
+.no-scroll {
+  height: 10vh;
+  overflow: hidden;
+}
+
 body {
   font-size: 16px;
   font-family: "Satoshi", sans-serif;
@@ -67,6 +72,10 @@ button {
 
 .d-block {
   display: block !important;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .page-hero {
@@ -649,6 +658,9 @@ button {
   gap: 0.5em;
   cursor: pointer;
 }
+.generated-link-item .upgrade-text .num {
+  font-size: 28px;
+}
 .generated-link-item .upgrade-text i {
   color: #363636;
   font-size: 32px;
@@ -1059,6 +1071,11 @@ button {
 .move-to-folders .folders-conatiner .folder-list-item.active {
   background-color: rgba(82, 97, 245, 0.1);
   color: var(--color-primary);
+}
+
+.badge-btn.disabled {
+  background-color: #AAAAAA !important;
+  pointer-events: none;
 }
 
 .container {
