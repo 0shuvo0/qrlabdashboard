@@ -781,16 +781,27 @@ button {
   display: none;
   z-index: 9;
   text-align: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .popup-btn.click-to-open .popup-btn-popup-wrapper {
   padding-top: 0;
   top: 2.5em;
 }
 .popup-btn:not(.click-to-open):hover .popup-btn-popup-wrapper {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .popup-btn.active .popup-btn-popup-wrapper {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .popup-btn .popup-close-btn {
   cursor: pointer;
@@ -806,6 +817,8 @@ button {
   -webkit-animation: 0.35s popIn ease;
           animation: 0.35s popIn ease;
   overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .popup-btn .popup-btn-links .popup-btn-link {
   padding: 12px 0 !important;
@@ -1089,11 +1102,10 @@ button {
 }
 
 @media (max-width: 1250px) {
-  .popup-btn.avatar .popup-btn-popup-wrapper {
-    left: 100%;
-    -webkit-transform: translate(-100%, 0);
-        -ms-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+  .popup-btn.avatar .popup-btn-popup-wrapper, .w-plus-btn .popup-btn .popup-btn-popup-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 @media (max-width: 776px) {
