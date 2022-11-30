@@ -935,6 +935,9 @@ button{
         padding-top: 3.5em;
     }
 }
+.d-sm{
+    display: none;
+}
 
 @media(max-width: 1250px){
     .popup-btn.avatar{
@@ -1062,6 +1065,12 @@ button{
     }
     .qr-code-url-inputs{
         gap: .5em;
+    }
+    .d-lg{
+        display: none;
+    }
+    .d-sm{
+        display: block;
     }
 }
 // Media queries
