@@ -4,6 +4,7 @@ const $$ = (v, p = document) => [...p.querySelectorAll(v)]
 
 const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)')
 const qrCodeEditDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(3)')
+const makeQrCodeStaticBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(4)')
 const qrCodeDeleteDesignBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(5)')
 const addNewFolderBtn = $('.add-new-folder-btn')
 const tryDynamicFreeBtns = $$('.try-dynamic-free-btn')
@@ -14,26 +15,35 @@ const editDesignModal= $('.edit-design-modal-wrapper')
 const deleteQRCodesModal= $('.delete-modal-wrapper')
 const addNewFolderModal= $('.add-new-folder-modal-wrapper')
 const tryDynamicSuccessModal = $('.try-dynamic-success-modal-wrapper')
+const makeQrCodeStaticModal = $('.make-static-modal-wrapper')
 
 
-$$('.close-btn', editInfoModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        editInfoModal.classList.add('hidden')
-    })
-})
-$$('.close-btn', editDesignModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        editDesignModal.classList.add('hidden')
-    })
-})
-$$('.close-btn', deleteQRCodesModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        deleteQRCodesModal.classList.add('hidden')
-    })
-})
-$$('.close-btn', addNewFolderModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        addNewFolderModal.classList.add('hidden')
+// $$('.close-btn', editInfoModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         editInfoModal.classList.add('hidden')
+//     })
+// })
+// $$('.close-btn', editDesignModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         editDesignModal.classList.add('hidden')
+//     })
+// })
+// $$('.close-btn', deleteQRCodesModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         deleteQRCodesModal.classList.add('hidden')
+//     })
+// })
+// $$('.close-btn', addNewFolderModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         addNewFolderModal.classList.add('hidden')
+//     })
+// })
+$$('.modal-wrapper').forEach(modal => {
+    const closeBtns = $$('.close-btn', modal)
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modal.classList.add('hidden')
+        })
     })
 })
 
@@ -57,6 +67,11 @@ tryDynamicFreeBtns.forEach(btn => {
 qrCodeDeleteDesignBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         deleteQRCodesModal.classList.remove('hidden')
+    })
+})
+makeQrCodeStaticBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        makeQrCodeStaticModal.classList.remove('hidden')
     })
 })
 addNewFolderBtn.addEventListener('click', () => {

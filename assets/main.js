@@ -16,24 +16,32 @@ const addNewFolderModal= $('.add-new-folder-modal-wrapper')
 const tryDynamicSuccessModal = $('.try-dynamic-success-modal-wrapper')
 
 
-$$('.close-btn', editInfoModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        editInfoModal.classList.add('hidden')
-    })
-})
-$$('.close-btn', editDesignModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        editDesignModal.classList.add('hidden')
-    })
-})
-$$('.close-btn', deleteQRCodesModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        deleteQRCodesModal.classList.add('hidden')
-    })
-})
-$$('.close-btn', addNewFolderModal).forEach(btn => {
-    btn.addEventListener('click', () => {
-        addNewFolderModal.classList.add('hidden')
+// $$('.close-btn', editInfoModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         editInfoModal.classList.add('hidden')
+//     })
+// })
+// $$('.close-btn', editDesignModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         editDesignModal.classList.add('hidden')
+//     })
+// })
+// $$('.close-btn', deleteQRCodesModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         deleteQRCodesModal.classList.add('hidden')
+//     })
+// })
+// $$('.close-btn', addNewFolderModal).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         addNewFolderModal.classList.add('hidden')
+//     })
+// })
+$$('.modal-wrapper').forEach(modal => {
+    const closeBtns = $$('.close-btn', modal)
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modal.classList.add('hidden')
+        })
     })
 })
 

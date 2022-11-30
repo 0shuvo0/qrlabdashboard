@@ -594,6 +594,7 @@ button{
             letter-spacing: -0.015em;
             color: #5A6F50;
             font-weight: 700;
+            text-decoration: none;
         }
         &.danger{
             background-color: #CC686E;
@@ -684,6 +685,7 @@ button{
 }
 
 .input-group{
+    margin-bottom: .5em;
     label{
         display: block;
         font-weight: 700;
@@ -701,6 +703,10 @@ button{
         border-radius: 6px;
         padding: 0 1em;
         color: var(--color-body);
+        &.disabled{
+            background-color: #DFE4EA;
+            pointer-events: none;
+        }
     }
 }
 
@@ -789,6 +795,12 @@ button{
 
 .modal-content.edit-info-modal{
     max-width: 420px;
+    &.make-static{
+        max-width: 580px;
+    }
+    .btm-info{
+        font-size: 14px;
+    }
 }
 
 .modal-content.edit-design-modal{
@@ -877,6 +889,40 @@ button{
     background-color: #AAAAAA !important;
     pointer-events: none;
 }
+
+
+.qr-code-url-inputs{
+    display: grid;
+    grid-template-columns: repeat(27, 1fr);
+    gap: 1em;
+    input{
+        &:first-child{
+            grid-column: span 10;
+        }
+        &:last-child{
+            grid-column: span 8;
+        }
+        &:nth-child(2){
+            grid-column: span 6;
+        }
+        &:nth-child(3){
+            grid-column: span 3;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container{
@@ -1013,6 +1059,9 @@ button{
         .popup-btn-popup-wrapper{
             justify-content: flex-end;
         }
+    }
+    .qr-code-url-inputs{
+        gap: .5em;
     }
 }
 // Media queries
