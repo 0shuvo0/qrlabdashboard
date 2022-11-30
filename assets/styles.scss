@@ -891,7 +891,7 @@ button{
 }
 
 @media(max-width: 1250px){
-    .popup-btn.avatar, .w-plus-btn .popup-btn{
+    .popup-btn.avatar{
         .popup-btn-popup-wrapper{
             justify-content: flex-end;
         }
@@ -1008,6 +1008,11 @@ button{
     }
     .info-message{
         justify-content: space-between;
+    }
+    .w-plus-btn .popup-btn{
+        .popup-btn-popup-wrapper{
+            justify-content: flex-end;
+        }
     }
 }
 // Media queries

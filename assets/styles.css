@@ -1102,7 +1102,7 @@ button {
 }
 
 @media (max-width: 1250px) {
-  .popup-btn.avatar .popup-btn-popup-wrapper, .w-plus-btn .popup-btn .popup-btn-popup-wrapper {
+  .popup-btn.avatar .popup-btn-popup-wrapper {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -1260,5 +1260,10 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .w-plus-btn .popup-btn .popup-btn-popup-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
