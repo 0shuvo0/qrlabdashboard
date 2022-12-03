@@ -2,7 +2,7 @@ const $ = (v, p = document) => p.querySelector(v)
 const $$ = (v, p = document) => [...p.querySelectorAll(v)]
 
 
-const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(1)')
+const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(2)')
 const qrCodeDeleteBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(4), .delete-tag-btn')
 const manageTagsBtns = $$('.manage-tags-btn')
 
