@@ -1002,6 +1002,7 @@ button {
   display: none;
 }
 .modal-wrapper .modal-content {
+  max-height: calc(100% - 100px);
   width: 95%;
   background-color: #fff;
   max-width: 340px;
@@ -1440,7 +1441,6 @@ button {
   .modal-wrapper .modal-content {
     width: 100%;
     max-width: 100% !important;
-    max-height: calc(100% - 100px);
     overflow: auto;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
