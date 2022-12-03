@@ -1216,6 +1216,8 @@ button {
 .nfc-tags-management-table {
   width: 100%;
   margin-top: 1em;
+  border-collapse: separate;
+  border-spacing: 1em 0;
 }
 .nfc-tags-management-table .table-head th {
   font-weight: 700;
@@ -1458,6 +1460,12 @@ button {
   }
   .d-sm {
     display: block;
+  }
+  .nfc-tags-management-table .tag-stat .tag {
+    font-size: 14px;
+  }
+  .nfc-tags-management-table .scans-count {
+    font-size: 14px;
   }
   .nfc-tags-management-table .actions .action-btn span {
     display: none;
