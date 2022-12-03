@@ -1440,6 +1440,8 @@ button {
   .modal-wrapper .modal-content {
     width: 100%;
     max-width: 100% !important;
+    max-height: 95%;
+    overflow: auto;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding-bottom: 5em;
