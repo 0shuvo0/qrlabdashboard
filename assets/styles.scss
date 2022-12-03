@@ -998,8 +998,10 @@ button{
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 0.02em;
-            padding-bottom: .5em;
         }
+    }
+    th, td{
+        padding-bottom: .5em;
     }
     .tag-stat .tag{
         font-size: 18px;
@@ -1023,6 +1025,7 @@ button{
         color: var(--color-dark);
     }
     .actions{
+        display: flex;
         .action-btn{
             padding: 5px 10px;
             background: #F2F6F9;

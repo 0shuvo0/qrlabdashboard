@@ -1224,6 +1224,8 @@ button {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+}
+.nfc-tags-management-table th, .nfc-tags-management-table td {
   padding-bottom: 0.5em;
 }
 .nfc-tags-management-table .tag-stat .tag {
@@ -1246,6 +1248,11 @@ button {
   font-size: 18px;
   font-weight: 700;
   color: var(--color-dark);
+}
+.nfc-tags-management-table .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .nfc-tags-management-table .actions .action-btn {
   padding: 5px 10px;
