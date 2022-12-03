@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/0shuvo0/qrlabdashboard/issues"
   },
-  "homepage": "https://github.com/0shuvo0/qrlabdashboard#readme"
+  "homepage": "https://github.com/0shuvo0/qrlabdashboard#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19"
+  }
 }
