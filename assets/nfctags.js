@@ -3,7 +3,7 @@ const $$ = (v, p = document) => [...p.querySelectorAll(v)]
 
 
 const qrCodeEditInfoBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(1)')
-const qrCodeDeleteBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(5), .delete-tag-btn')
+const qrCodeDeleteBtns = $$('.generated-link-item .badge-btn.edit .popup-btn-link:nth-child(4), .delete-tag-btn')
 const manageTagsBtns = $$('.manage-tags-btn')
 
 const addNewFolderBtn = $('.add-new-folder-btn')
