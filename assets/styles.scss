@@ -481,6 +481,16 @@ button{
             }
         }
     }
+    .info-row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em 3em;
+        .upgrade-text-lg{
+            font-size: 42px !important;
+            letter-spacing: -0.025em;
+            font-weight: 700;
+        }
+    }
     .qr-code-container{
         width: 140px;
         display: flex;
@@ -999,6 +1009,9 @@ button{
         gap: .5em;
         grid-template-columns: 6fr 2fr 2fr 3fr;
     }
+    &.dynamic-nfc tr{
+        grid-template-columns: 6fr 2fr 3fr;
+    }
     .table-head{
         th{
             font-weight: 700;
@@ -1179,6 +1192,11 @@ button{
         }
         th:nth-child(2), td:nth-child(2){
             display: none;
+        }
+        &.dynamic-nfc{
+            th:nth-child(2), td:nth-child(2){
+                display: initial;
+            }  
         }
     }
 }
