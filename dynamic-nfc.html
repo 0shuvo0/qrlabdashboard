@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="993f96e5-4482-480f-b1f3-303c39063954";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <title>Document</title>
 </head>
@@ -97,7 +97,7 @@
                 </svg>
             </div>
         </div>
-        <p class="hero-title">Encrypted NFC</p>
+        <p class="hero-title">Dynamic NFC</p>
     </div>
 
     <div class="sidebar-wrapper hidden">
@@ -445,13 +445,13 @@
                         <div class="info-row">
                             <div>
                                 <p class="scan-count-text">Number of taps</p>
-                                <p class="upgrade-text-lg">
+                                <p class="upgrade-text">
                                     <span class="num">13.46</span>
                                 </p>
                             </div>
                             <div>
                                 <p class="scan-count-text">Number of scans</p>
-                                <p class="upgrade-text-lg">
+                                <p class="upgrade-text">
                                     <span class="num">465</span>
                                 </p>
                             </div>
@@ -927,6 +927,25 @@
         </div>
     </div>
 
+    <div class="modal-wrapper remove-nfc-modal-wrapper hidden">
+        <div class="modal-content remove-nfc-modal">
+            <svg width="122" height="108" viewBox="0 0 122 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.0662 5.15789C56.0368 -1.7193 65.9632 -1.7193 69.9337 5.1579L120.026 91.9211C123.997 98.7982 119.034 107.395 111.093 107.395H10.9072C2.96613 107.395 -1.99706 98.7982 1.97349 91.9211L52.0662 5.15789Z" fill="#D0D8DF"/>
+                <path d="M66.9012 23.6172L66.2314 72.9187H58.461L57.7912 23.6172H66.9012ZM62.3462 92.7464C60.6939 92.7464 59.276 92.1547 58.0926 90.9713C56.9092 89.7879 56.3175 88.37 56.3175 86.7177C56.3175 85.0654 56.9092 83.6475 58.0926 82.4641C59.276 81.2807 60.6939 80.689 62.3462 80.689C63.9985 80.689 65.4164 81.2807 66.5998 82.4641C67.7832 83.6475 68.3749 85.0654 68.3749 86.7177C68.3749 87.8118 68.0958 88.8166 67.5376 89.732C67.0017 90.6475 66.276 91.3844 65.3606 91.9426C64.4674 92.4785 63.4626 92.7464 62.3462 92.7464Z" fill="#788DA2"/>
+            </svg>
+            <div class="title mt-1">Remove NFC</div>
+            <div class="info">OBy removing NFC tracking, this tag will be moved back to the dynamic section. Please note that if any pre-programmed NFC tag are tapped, it will automatially be brought back to this section.</div>
+
+            <div class="modal-footer mt-105">
+                <button class="badge-btn close-btn link">Cancel</button>
+                <button class="badge-btn delete">
+                    <span>Understood, remove</span>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <div class="modal-wrapper add-new-folder-modal-wrapper hidden">
         <div class="modal-content edit-info-modal">
             <div class="modal-title">
@@ -949,7 +968,7 @@
         </div>
     </div>
 
-    <script src="assets/popup.js"></script>
-    <script src="assets/nfctags.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/dynamicnfctags.js"></script>
 </body>
 </html>
