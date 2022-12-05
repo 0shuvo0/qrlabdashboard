@@ -50,11 +50,17 @@ button{
 .mt-025{
     margin-top: .52em;
 }
+.ml-1{
+    margin-left: 1em;
+}
 .d-block{
     display: block !important;
 }
 .mr-0{
     margin-right: 0 !important;
+}
+.mb-2{
+    margin-bottom: 2em;
 }
 .hidden{
     display: none !important;
@@ -1094,13 +1100,22 @@ button{
     display: grid;
     gap: 1.5em;
     grid-template-columns: 4fr 400px;
+    .analytics-page-title{
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: -0.04em;
+        color: var(--color-dark);
+        margin-bottom: .25em;
+    }
     .select-days{
         padding: 5px 10px;
+        display: inline-block;
         background: #F0F6FB;
         border-radius: 6px;
         border: none;
         outline: none;
         font-size: 14px;
+        cursor: pointer;
     }
     .chart{
         margin-top: .5em;

@@ -74,12 +74,20 @@ button {
   margin-top: 0.52em;
 }
 
+.ml-1 {
+  margin-left: 1em;
+}
+
 .d-block {
   display: block !important;
 }
 
 .mr-0 {
   margin-right: 0 !important;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
 }
 
 .hidden {
@@ -1328,13 +1336,22 @@ button {
   -ms-grid-columns: 4fr 1.5em 400px;
   grid-template-columns: 4fr 400px;
 }
+.analytics-page-wrapper .analytics-page-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.04em;
+  color: var(--color-dark);
+  margin-bottom: 0.25em;
+}
 .analytics-page-wrapper .select-days {
   padding: 5px 10px;
+  display: inline-block;
   background: #F0F6FB;
   border-radius: 6px;
   border: none;
   outline: none;
   font-size: 14px;
+  cursor: pointer;
 }
 .analytics-page-wrapper .chart {
   margin-top: 0.5em;

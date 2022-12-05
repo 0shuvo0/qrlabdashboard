@@ -141,16 +141,56 @@
 
     <div class="container page-content analytics-page-wrapper">
         <div class="main-col">
+            <div class="d-sm mb-2">
+                <div class="analytics-page-title">Analytics</div>
+                <a href="#analytics-filters-section" class="badge-btn">
+                    <span>Filters</span>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>
             <div class="content-heading">Chart</div>
             <div class="content-box">
                 <div>
-                    <select class="select-days">
+                    <label class="select-days popup-btn">
+                        <span id="analytics-period-text">Today</span> <i class="bi bi-chevron-down ml-1"></i>
+                        <div class="popup-btn-popup-wrapper">
+                            <div
+                                class="popup-btn-popup"
+                                style="--popup-width: 140px"
+                            >
+                                <div class="popup-btn-links" id="analytics-period-btns">
+                                    <span class="popup-btn-link">
+                                        <span>Today</span>
+                                    </span>
+                                    <span class="popup-btn-link">
+                                        <span>Last 7 days</span>
+                                    </span>
+                                    <span class="popup-btn-link">
+                                        <span>Last 28 days</span>
+                                    </span>
+                                    <span class="popup-btn-link">
+                                        <span>Custom...</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            var analyticsPeriodBtns = Array.from(document.querySelectorAll('#analytics-period-btns .popup-btn-link'))
+                            var analyticsPeriodText = document.querySelector('#analytics-period-text')
+                            analyticsPeriodBtns.forEach(function(b){
+                                b.addEventListener('click', function(){
+                                    analyticsPeriodText.innerText = b.innerText
+                                })
+                            })
+                        </script>
+                    </label>
+                    <!-- <select class="select-days">
                         <option value="" disabled>Select time period</option>
                         <option value="">Today</option>
                         <option value="" selected>Last 7 days</option>
                         <option value="">Last 28 days</option>
                         <option value="">Custom...</option>
-                    </select>
+                    </select> -->
                 </div>
                 <div class="chart">
                     <img src="assets/chart.svg" alt="">
@@ -165,7 +205,7 @@
                     </div>
                     <div class="analytics-number">
                         <div class="number">45</div>
-                        <div class="title">Tags</div>
+                        <div class="title">Taps</div>
                     </div>
                     <div class="analytics-number">
                         <div class="number">90</div>
@@ -223,7 +263,7 @@
                 </div>
             </div>
         </div>
-        <div class="side-col">
+        <div class="side-col" id="analytics-filters-section">
             <div class="content-heading">Filters</div>
             <div class="content-box">
                 <div class="filter-btns">
@@ -251,7 +291,7 @@
                         </div>
                     </div>
                     <div class="analytics-filter-item">
-                        <p class="subtitle">Dynamic QR Code</p>
+                        <p class="subtitle">Dynamic NFC</p>
                         <p class="title">My latest campaign</p>
                         <div class="nums">
                             <i class="bi bi-bar-chart-fill"></i>
