@@ -975,6 +975,16 @@ button {
   pointer-events: none;
 }
 
+.input-groups {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+}
+.input-groups.two-col {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
 .accordion-container {
   background: #FFFFFF;
   border: 1.5px solid #E2E2E2;
@@ -1603,6 +1613,7 @@ button {
   -webkit-box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
+  overflow: hidden;
 }
 .account-page-content .header {
   padding: 8px 24px;
@@ -1634,6 +1645,118 @@ button {
 }
 .account-page-content .content {
   padding: 24px;
+  background: #FFFCFC;
+}
+.account-page-content .title {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: -0.025em;
+  color: var(--color-dark);
+  margin-bottom: 0.5em;
+}
+.account-page-content .account-content-w-sm {
+  max-width: 484px;
+}
+.account-page-content .input-group {
+  -webkit-box-shadow: 0px 10.9041px 23.7908px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 10.9041px 23.7908px rgba(0, 0, 0, 0.03);
+}
+
+.profile-dp-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.profile-dp-upload .dp {
+  max-width: 100px;
+  max-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile-dp-upload .upload-btn {
+  background-color: var(--color-body);
+}
+
+.account-users-list {
+  border: 1px solid #DFE4EA;
+  -webkit-box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+.account-users-list .list-header, .account-users-list .list-item {
+  padding: 18px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.account-users-list .list-header > *:first-child, .account-users-list .list-item > *:first-child {
+  min-width: 270px;
+}
+.account-users-list .list-header {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.account-users-list .list-item {
+  padding: 0.5em 22px;
+  border-bottom: 1px solid #DFE4EA;
+}
+.account-users-list .list-item .last-active {
+  font-size: 14px;
+}
+.account-users-list .list-item .last-active b {
+  display: none;
+}
+.account-users-list .list-item:last-child {
+  border-bottom: none;
+}
+.account-users-list .list-item .actions {
+  color: var(--color-dark);
+}
+.account-users-list .list-item .actions i {
+  cursor: pointer;
+}
+.account-users-list .list-item .actions .delete {
+  color: #CC686E;
+  margin-left: 0.5em;
+}
+.account-users-list .list-item .user-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.account-users-list .list-item .user-data .dp {
+  --size: 64px;
+  height: var(--size);
+  width: var(--size);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.account-users-list .list-item .user-data .name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+.account-users-list .list-item .user-data .email {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .container {
@@ -1871,6 +1994,36 @@ button {
     display: none;
   }
   .nfc-tags-management-table .actions .action-btn i {
+    display: inline;
+  }
+  .account-users-list .list-header > *:first-child, .account-users-list .list-item > *:first-child {
+    min-width: 100%;
+  }
+  .account-users-list .list-header {
+    display: none;
+  }
+  .account-users-list .list-item {
+    padding: 0.75em 22px;
+    gap: 0.5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+  .account-users-list .list-item .actions {
+    position: absolute;
+    top: 0.5em;
+    right: 22px;
+    font-size: 1.25em;
+  }
+  .account-users-list .list-item .actions .delete {
+    margin-left: 0.25em;
+  }
+  .account-users-list .list-item .last-active b {
     display: inline;
   }
 }

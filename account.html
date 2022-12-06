@@ -142,24 +142,108 @@
     <div class="container page-content account-page">
         <div class="account-page-content">
             <div class="header account-tab-btns">
-                <span class="tab-btn active" data-template="account-profile-template">Profile</span>
+                <span class="tab-btn" data-template="account-profile-template">Profile</span>
                 <span class="tab-btn" data-template="account-account-template">Account</span>
-                <span class="tab-btn">Users</span>
+                <span class="tab-btn active" data-template="account-users-template">Users</span>
                 <span class="tab-btn">Subscription</span>
             </div>
             <div class="content" id="account-page-content">
-                world
+                <!-- Content will be dunamically added here -->
             </div>
         </div>
     </div>
 
     <div id="account-profile-template" class="hidden">
-        hello world
-    </div>
+        <p class="title">Profile details</p>
+        <div class="profile-dp-upload">
+            <img src="assets/images/dp.svg" alt="" class="dp">
+            <div class="badge-btn upload-btn">
+                <span>Upload photo</span>
+                <i class="bi bi-chevron-right"></i>
+            </div>
+        </div>
+        <div class="account-content-w-sm mt-2">
+            <div class="input-groups two-col">
+                <div class="input-group">
+                    <label>First name</label>
+                    <input type="text" placeholder="Enter first name" value="John">
+                </div>
+                <div class="input-group">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Enter last name" value="Doe">
+                </div>
+            </div>
+            <div class="input-group mt-05">
+                <label>Phone number</label>
+                <input type="text" placeholder="Enter phone number">
+            </div>
+            <div class="badge-btn mt-1">
+                <span>Save changes</span>
+                <i class="bi bi-chevron-right"></i>
+            </div>
+        </div><!-- /Profile details template  -->
+    </div><!-- /Profile details template  -->
 
     <div id="account-account-template" class="hidden">
-        bye world
-    </div>
+        <p class="title">Login details</p>
+        <div class="account-content-w-sm">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text" placeholder="Enter email" class="disabled" value="email@domain.tld">
+            </div>
+            <div class="input-group mt-1">
+                <label>current password</label>
+                <input type="text" placeholder="Enter current password">
+            </div>
+            <div class="input-group mt-1">
+                <label>New password</label>
+                <input type="text" placeholder="Enter new password">
+            </div>
+    
+            <div class="badge-btn disabled mt-1">
+                <span>Save changes</span>
+                <i class="bi bi-chevron-right"></i>
+            </div>
+        </div>
+    </div><!-- /Login details template  -->
+
+    <div id="account-users-template" class="hidden">
+        <div class="account-users-list">
+            <div class="list-header">
+                <span>Users</span>
+                <span>Last active</span>
+                <span>Actions</span>
+            </div>
+            <div class="list-item">
+                <div class="user-data">
+                    <img src="assets/images/dp.svg" alt="" class="dp">
+                    <div class="data">
+                        <div class="name">John Doe</div>
+                        <div class="email">email@domain.tld</div>
+                    </div>
+                </div>
+                <span class="last-active"><b>Last active:</b> Yesterday</span>
+                <span class="actions">
+                    <i class="bi bi-pencil-square edit"></i>
+                    <i class="bi bi-trash delete"></i>
+                </span>
+            </div>
+            <div class="list-item">
+                <div class="user-data">
+                    <img src="assets/images/dp.svg" alt="" class="dp">
+                    <div class="data">
+                        <div class="name">John Doe</div>
+                        <div class="email">email@domain.tld</div>
+                    </div>
+                </div>
+                <span class="last-active"><b>Last active:</b> Yesterday</span>
+                <span class="actions">
+                    <i class="bi bi-pencil-square edit"></i>
+                    <i class="bi bi-trash delete"></i>
+                </span>
+            </div>
+        </div>
+    </div><!-- /Users template  -->
 
     <div class="container page-footer">
         <a href="#" class="logo">

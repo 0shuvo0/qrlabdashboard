@@ -781,6 +781,15 @@ button{
         }
     }
 }
+.input-groups{
+    display: grid;
+    gap: 1em;
+    &.two-col{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 
 .accordion-container{
     background: #FFFFFF;
@@ -1333,6 +1342,7 @@ button{
     border: 1px solid #DFE4EA;
     box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
+    overflow: hidden;
     .header{
         padding: 8px 24px;
         padding-bottom: 0;
@@ -1358,10 +1368,99 @@ button{
     }
     .content{
         padding: 24px;
+        background: #FFFCFC;
+    }
+    .title{
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: -0.025em;
+        color: var(--color-dark);
+        margin-bottom: .5em;
+    }
+    .account-content-w-sm{
+        max-width: 484px;
+    }
+    .input-group{
+        box-shadow: 0px 10.9041px 23.7908px rgba(0, 0, 0, 0.03);
     }
 }
-
-
+.profile-dp-upload{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    .dp{
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: cover;
+    }
+    .upload-btn{
+        background-color: var(--color-body);
+    }
+}
+.account-users-list{
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    .list-header, .list-item{
+        padding: 18px 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        & > *:first-child{
+            min-width: 270px;
+        }
+    }
+    .list-header{
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+    }
+    .list-item{
+        padding: .5em 22px;
+        border-bottom: 1px solid #DFE4EA;
+        .last-active{
+            font-size: 14px;
+            b{
+                display: none;
+            }
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+        .actions{
+            color: var(--color-dark);
+            i{
+                cursor: pointer;
+            }
+            .delete{
+                color: #CC686E;
+                margin-left: .5em;
+            }
+        }
+        .user-data{
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            flex-wrap: wrap;
+            .dp{
+                --size: 64px;
+                height: var(--size);
+                width: var(--size);
+                object-fit: cover;
+            }
+            .name{
+                font-weight: 700;
+                font-size: 18px;
+                color: #000;
+            }
+            .email{
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+    }
+}
 
 
 
@@ -1570,6 +1669,35 @@ button{
                 i{
                     display: inline;
                 }
+            }
+        }
+    }
+    .account-users-list{
+        .list-header, .list-item{
+            & > *:first-child{
+                min-width: 100%;
+            }
+        }
+        .list-header{
+            display: none;
+        }
+        .list-item{
+            padding: .75em 22px;
+            gap: .5em;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            .actions{
+                position: absolute;
+                top: .5em;
+                right: 22px;
+                font-size: 1.25em;
+                .delete{
+                    margin-left: .25em;
+                }
+            }
+            .last-active b{
+                display: inline;
             }
         }
     }
