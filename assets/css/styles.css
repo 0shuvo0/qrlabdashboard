@@ -1597,6 +1597,45 @@ button {
   margin-bottom: 0;
 }
 
+.account-page-content {
+  background: #FFFFFF;
+  border: 1px solid #DFE4EA;
+  -webkit-box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+.account-page-content .header {
+  padding: 8px 24px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #DFE4EA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.account-page-content .header .tab-btn {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.005em;
+  color: #425466;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.account-page-content .header .tab-btn.active {
+  border-bottom-color: var(--color-primary);
+  color: #5261F5;
+}
+.account-page-content .content {
+  padding: 24px;
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
