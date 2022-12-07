@@ -1389,6 +1389,9 @@ button{
         letter-spacing: -0.025em;
         color: var(--color-dark);
         margin-bottom: .5em;
+        &.mb-0{
+            margin-bottom: 0;
+        }
     }
     .account-content-w-sm{
         max-width: 484px;
@@ -1476,9 +1479,97 @@ button{
 }
 
 
+.account-subscription-tab{
+    .subtitle{
+        margin: .5em 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+    }
+    .subscription-infos{
+        .info{
+            display: flex;
+            align-items: center;
+            gap: .5em;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -0.005em;
+            i{
+                font-size: 22px;
+                color: #DFE4EA;
+            }
+        }
+    }
+}
 
-
-
+.account-subscriptions{
+    background: #FFFFFF;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+    margin-top: 1.5em;
+    border-radius: 15px;
+    overflow: hidden;
+    .subscription-item{
+        border-bottom: 1px solid #DFE4EA;
+        padding: 24px 32px;
+        display: grid;
+        grid-template-columns: 4fr 2fr 2.5fr;
+        gap: .5em;
+        align-items: center;
+        &:hover{
+            background-color: #F4F5FF;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+        .info-title{
+            font-weight: 700;
+            font-size: 36px;
+            letter-spacing: -0.04em;
+            color: var(--color-dark);
+            margin-bottom: .25em;
+        }
+        .labels{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            .label{
+                padding: 4px 8px;
+                background-color: #F7F8F9;
+                border-radius: 8px;
+                font-size: 18px;
+                letter-spacing: -0.005em;
+                color: #75818C;
+                &.active{
+                    background-color: var(--color-primary);
+                    color: #fff;
+                }
+            }
+        }
+        .subscription-type{
+            font-weight: 700;
+            font-size: 32px;
+            letter-spacing: -0.025em;
+            color: var(--color-primary);
+            &.custom{
+                color: var(--color-dark);
+            }
+        }
+        .subscription-detail{
+            font-size: 14px;
+            margin-top: -5px;
+        }
+        .action{
+            text-align: right;
+            .badge-btn.link{
+                padding: 0;
+            }
+            .badge-btn.contact{
+                background-color: var(--color-dark);
+            }
+        }
+    }
+}
 
 
 
@@ -1508,6 +1599,15 @@ button{
 @media(max-width: 900px){
     .analytics-page-wrapper{
         grid-template-columns: 1.25fr 1fr;
+    }
+    .account-subscriptions{
+        .subscription-item{
+            grid-template-columns: 2fr;
+            .info{
+                grid-column: span 2;
+                margin-bottom: .5em;
+            }
+        }
     }
 }
 @media(max-width: 776px){
@@ -1714,6 +1814,16 @@ button{
             }
             .data .last-active{
                 display: block;
+            }
+        }
+    }
+    .account-subscriptions{
+        .subscription-item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .action{
+                margin-top: .75em;
             }
         }
     }

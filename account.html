@@ -142,10 +142,10 @@
     <div class="container page-content account-page">
         <div class="account-page-content">
             <div class="header account-tab-btns">
-                <span class="tab-btn" data-template="account-profile-template">Profile</span>
+                <span class="tab-btn active" data-template="account-profile-template">Profile</span>
                 <span class="tab-btn" data-template="account-account-template">Account</span>
-                <span class="tab-btn active" data-template="account-users-template">Users</span>
-                <span class="tab-btn">Subscription</span>
+                <span class="tab-btn" data-template="account-users-template">Users</span>
+                <span class="tab-btn" data-template="account-subscription-template">Subscription</span>
             </div>
             <div class="content" id="account-page-content">
                 <!-- Content will be dunamically added here -->
@@ -253,6 +253,127 @@
             </div>
         </div>
     </div><!-- /Users template  -->
+
+    <div id="account-subscription-template" class="hidden">
+        <p class="title mb-0">Plans</p>
+        <div class="account-subscription-tab">
+            <div class="subtitle">All subscription plans include</div>
+            <div class="subscription-infos">
+                <div class="info">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Unlimited QR code scans</span>
+                </div>
+                <div class="info">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Choose a custom URL for your QR code(s)</span>
+                </div>
+                <div class="info">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Edit QR code destination, QR code stays the same</span>
+                </div>
+                <div class="info">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Bonus NFC tag managament</span>
+                </div>
+                <div class="info">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Access to detailed analytics</span>
+                </div>
+            </div>
+            <div class="account-subscriptions">
+                <div class="subscription-item">
+                    <div class="info">
+                        <div class="info-title">1 Dynamic QR Code</div>
+                        <div class="labels">
+                            <div class="label">+ 5 NFC tags</div>
+                        </div>
+                    </div>
+                    <div class="subscription">
+                        <Span class="subscription-type">£2.99/mo</span>
+                        <div class="subscription-detail">Auto-renews monthly</div>
+                    </div>
+                    <div class="action">
+                        <span class="badge-btn">
+                            <span>Select plan</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </span>
+                    </div>
+                </div><!-- /Subscription item -->
+                <div class="subscription-item">
+                    <div class="info">
+                        <div class="info-title">5 Dynamic QR Codes</div>
+                        <div class="labels">
+                            <div class="label active">Current plan</div>
+                            <div class="label">+ 5 NFC tags</div>
+                        </div>
+                    </div>
+                    <div class="subscription">
+                        <Span class="subscription-type">£9.99/mo</span>
+                        <div class="subscription-detail">Auto-renews monthly</div>
+                    </div>
+                    <div class="action">
+                        <span class="badge-btn link">
+                            <span>Cancel subscription</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </span>
+                    </div>
+                </div><!-- /Subscription item -->
+                <div class="subscription-item">
+                    <div class="info">
+                        <div class="info-title">50 Dynamic QR Codes</div>
+                        <div class="labels">
+                            <div class="label">+ 5000 NFC tags</div>
+                        </div>
+                    </div>
+                    <div class="subscription">
+                        <Span class="subscription-type">£49/mo</span>
+                        <div class="subscription-detail">Auto-renews monthly</div>
+                    </div>
+                    <div class="action">
+                        <span class="badge-btn">
+                            <span>Select plan</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </span>
+                    </div>
+                </div><!-- /Subscription item -->
+                <div class="subscription-item">
+                    <div class="info">
+                        <div class="info-title">500 Dynamic QR Codes</div>
+                        <div class="labels">
+                            <div class="label">+ 2.500 NFC tags</div>
+                        </div>
+                    </div>
+                    <div class="subscription">
+                        <Span class="subscription-type">£99/mo</span>
+                        <div class="subscription-detail">Auto-renews monthly</div>
+                    </div>
+                    <div class="action">
+                        <span class="badge-btn">
+                            <span>Select plan</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </span>
+                    </div>
+                </div><!-- /Subscription item -->
+                <div class="subscription-item">
+                    <div class="info">
+                        <div class="info-title">Enterprise plans</div>
+                        <div class="labels">
+                            <div class="label">For larger plans & encrypted NFC</div>
+                        </div>
+                    </div>
+                    <div class="subscription">
+                        <Span class="subscription-type custom">Custom</span>
+                    </div>
+                    <div class="action">
+                        <span class="badge-btn contact">
+                            <span>Contact us</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </span>
+                    </div>
+                </div><!-- /Subscription item -->
+            </div>
+        </div>
+    </div><!-- /Subscription template  -->
 
     <div class="container page-footer">
         <a href="#" class="logo">
