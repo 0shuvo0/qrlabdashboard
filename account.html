@@ -142,9 +142,9 @@
     <div class="container page-content account-page">
         <div class="account-page-content">
             <div class="header account-tab-btns">
-                <span class="tab-btn active" data-template="account-profile-template">Profile</span>
+                <span class="tab-btn" data-template="account-profile-template">Profile</span>
                 <span class="tab-btn" data-template="account-account-template">Account</span>
-                <span class="tab-btn" data-template="account-users-template">Users</span>
+                <span class="tab-btn active" data-template="account-users-template">Users</span>
                 <span class="tab-btn">Subscription</span>
             </div>
             <div class="content" id="account-page-content">
@@ -208,6 +208,13 @@
     </div><!-- /Login details template  -->
 
     <div id="account-users-template" class="hidden">
+        <div class="title d-flex align-center gap-01-075 mb-1">
+            <span>Users</span>
+            <span class="badge-btn">
+                <span>Add new user</span>
+                <i class="bi bi-chevron-right"></i>
+            </span>
+        </div>
         <div class="account-users-list">
             <div class="list-header">
                 <span>Users</span>
