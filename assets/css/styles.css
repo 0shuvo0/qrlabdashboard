@@ -1715,7 +1715,7 @@ button {
 .account-users-list .list-item .last-active {
   font-size: 14px;
 }
-.account-users-list .list-item .last-active b {
+.account-users-list .list-item .data .last-active {
   display: none;
 }
 .account-users-list .list-item:last-child {
@@ -2023,7 +2023,10 @@ button {
   .account-users-list .list-item .actions .delete {
     margin-left: 0.25em;
   }
-  .account-users-list .list-item .last-active b {
-    display: inline;
+  .account-users-list .list-item .last-active {
+    display: none;
+  }
+  .account-users-list .list-item .data .last-active {
+    display: block;
   }
 }

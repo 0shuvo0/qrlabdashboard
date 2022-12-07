@@ -1421,9 +1421,9 @@ button{
         border-bottom: 1px solid #DFE4EA;
         .last-active{
             font-size: 14px;
-            b{
-                display: none;
-            }
+        }
+        .data .last-active{
+            display: none;
         }
         &:last-child{
             border-bottom: none;
@@ -1696,8 +1696,11 @@ button{
                     margin-left: .25em;
                 }
             }
-            .last-active b{
-                display: inline;
+            .last-active{
+                display: none;
+            }
+            .data .last-active{
+                display: block;
             }
         }
     }
