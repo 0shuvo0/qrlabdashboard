@@ -97,7 +97,7 @@
                 </svg>
             </div>
         </div>
-        <p class="hero-title">Welcome</p>
+        <p class="hero-title">Bulk QR Codes</p>
     </div>
 
     <div class="sidebar-wrapper hidden">
@@ -140,50 +140,85 @@
     </div>
 
     <div class="container page-content">
-        <div class="page-title w-plus-btn">
-            <span>Dashboard</span>
-            <span class="badge-btn square popup-btn">
-                <i class="bi bi-plus-lg"></i>    
-                <div class="popup-btn-popup-wrapper">
-                    <div
-                        class="popup-btn-popup"
-                        style="--popup-width: 180px"
-                    >
-                        <div class="popup-btn-links">
-                            <a href="#" class="popup-btn-link">
-                                <span>New QR code</span>
-                            </a>
-                            <a href="bulkqrcodes.html" class="popup-btn-link">
-                                <span>Bulk create</span>
-                            </a>
+        <div class="bulk-qr-codes-page">
+            <p class="page-title">Multiple QR codes with one upload</p>
+            <p class="page-subtitle">Follow the step-by-step instructions.</p>
+            <div class="bulk-qr-code-create-instructions">
+                <div class="instruction-item">
+                    <spa class="sl">1</spa>
+                    <div class="content">
+                        <div class="step-text">Step 1</div>
+                        <div class="step-title">Download the sample file</div>
+                        <div class="btns">
+                            <span class="badge-btn">
+                                <span>Choose file</span>
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
                         </div>
                     </div>
-                </div>
-            </span>
+                </div><!-- /instruction-item -->
+                <div class="instruction-item">
+                    <spa class="sl">2</spa>
+                    <div class="content">
+                        <div class="step-text">Step 2</div>
+                        <div class="step-title">Fill out the sample file with the links you wish to create QR codes for</div>
+                    </div>
+                </div><!-- /instruction-item -->
+                <div class="instruction-item">
+                    <spa class="sl">3</spa>
+                    <div class="content">
+                        <div class="step-text">Step 3</div>
+                        <div class="step-title">Upload the completed sample file</div>
+                        <div class="btns">
+                            <span class="badge-btn">
+                                <span>Choose file</span>
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                            <span class="d-flex align-center selected-file">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Sample.csv</span>
+                            </span>
+                        </div>
+                    </div>
+                </div><!-- /instruction-item -->
+                <div class="instruction-item">
+                    <spa class="sl">4</spa>
+                    <div class="content">
+                        <div class="step-text">Step 4</div>
+                        <div class="step-title">Select the type of QR codes you wish to generate</div>
+                        <div class="select-cards">
+                            <div class="card active">
+                                <p class="check-icon">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </p>
+                                <div class="card-title">Static</div>
+                                <p class="card-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="card">
+                                <p class="check-icon">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </p>
+                                <div class="card-title">Dynamic</div>
+                                <p class="card-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /instruction-item -->
+                <div class="instruction-item">
+                    <spa class="sl">5</spa>
+                    <div class="content">
+                        <div class="step-text">Step 5</div>
+                        <div class="step-title">Click generate to create your QR codes</div>
+                        <div class="btns">
+                            <span class="badge-btn">
+                                <span>Generate</span>
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div><!-- /instruction-item -->
+            </div>
         </div>
-        <div class="dashboard-cards">
-            <div class="dashboard-card">
-                <div class="card-number">2</div>
-                <div class="card-info">Static QR Codes</div>
-                <div class="card-number stat"><i class="bi bi-question-circle-fill"></i></div>
-                <div class="card-info"><a href="#">Upgrade</a> to track scans</div>
-                <a href="staticqrcodes.html" class="card-link">My Static QR Codes</a>
-            </div>
-            <div class="dashboard-card">
-                <div class="card-number">10</div>
-                <div class="card-info">Dynamic QR Codes</div>
-                <div class="card-number stat">14,567</i></div>
-                <div class="card-info">Scans</div>
-                <a href="dynamicqrcodes.html" class="card-link">My Dynamic QR Codes</a>
-            </div>
-            <div class="dashboard-card">
-                <div class="card-number">0</div>
-                <div class="card-info">NFC tags created</div>
-                <div class="card-number stat"><i class="bi bi-dash"></i></div>
-                <div class="card-info">Taps</div>
-                <a href="encrypted-nfc.html" class="card-link">My NFC Tags</a>
-            </div>
-        </div><!-- Dashboard cards -->
     </div>
 
     <div class="container page-footer">

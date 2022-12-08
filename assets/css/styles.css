@@ -90,6 +90,10 @@ button {
   margin-right: 0 !important;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .mb-2 {
   margin-bottom: 2em;
 }
@@ -1884,6 +1888,131 @@ button {
   background-color: var(--color-dark);
 }
 
+.page-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.005em;
+  margin-top: 0.25em;
+}
+
+.bulk-qr-codes-page {
+  max-width: 832px;
+  margin: 0 auto;
+}
+
+.bulk-qr-code-create-instructions {
+  background: #FAFAFA;
+  border: 1px solid #DFE4EA;
+  -webkit-box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 26px 90px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin-top: 2em;
+}
+.bulk-qr-code-create-instructions .instruction-item {
+  padding: 36px;
+  border-bottom: 1px solid #DFE4EA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.bulk-qr-code-create-instructions .instruction-item:last-child {
+  border-bottom: none;
+}
+.bulk-qr-code-create-instructions .instruction-item .sl {
+  --size: 46px;
+  height: var(--size);
+  width: var(--size);
+  text-align: center;
+  line-height: var(--size);
+  border-radius: 50%;
+  background-color: #DFE4EA;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.035em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.bulk-qr-code-create-instructions .instruction-item .step-text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+.bulk-qr-code-create-instructions .instruction-item .step-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.013em;
+  line-height: 120%;
+  color: var(--color-dark);
+  margin-bottom: 1em;
+}
+.bulk-qr-code-create-instructions .instruction-item .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.bulk-qr-code-create-instructions .instruction-item .selected-file {
+  font-size: 15px;
+}
+.bulk-qr-code-create-instructions .instruction-item .selected-file i {
+  font-size: 20px;
+  color: #D0D8DF;
+  margin-right: 0.5em;
+}
+
+.select-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.75em;
+}
+.select-cards .card {
+  padding: 16px 20px 20px 20px;
+  width: 160px;
+  border: 1px solid #DFE4EA;
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+}
+.select-cards .card.active {
+  border-color: var(--color-primary);
+}
+.select-cards .card .check-icon {
+  font-size: 26px;
+  color: var(--color-primary);
+  text-align: right;
+  opacity: 0;
+}
+.select-cards .card.active .check-icon {
+  opacity: 1;
+}
+.select-cards .card .card-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.013em;
+  color: var(--color-dark);
+}
+.select-cards .card.active .card-title {
+  color: var(--color-primary);
+}
+.select-cards .card .card-info {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.005em;
+  margin-top: 0.2em;
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -1896,6 +2025,27 @@ button {
 
 .d-sm {
   display: none;
+}
+
+.page-empty-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.5em;
+  gap: 0.5em;
+}
+.page-empty-content .badge-btn {
+  margin-top: 0.5em;
+}
+.page-empty-content .info {
+  font-size: 18px;
 }
 
 @media (max-width: 1250px) {

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="993f96e5-4482-480f-b1f3-303c39063954";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <title>Document</title>
 </head>
 <body>
     <div class="page-hero">
-        <img src="assets/bg-gradient.png" alt="" class="bg-gradient">
+        <img src="../../assets/bg-gradient.png" alt="" class="bg-gradient">
         <div class="navbar container">
             <a href="?" class="logo">
                 <svg width="84" height="76" viewBox="0 0 84 76" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +97,7 @@
                 </svg>
             </div>
         </div>
-        <p class="hero-title">Welcome</p>
+        <p class="hero-title">QR Codes</p>
     </div>
 
     <div class="sidebar-wrapper hidden">
@@ -141,7 +141,7 @@
 
     <div class="container page-content">
         <div class="page-title w-plus-btn">
-            <span>Dashboard</span>
+            <span>Static QR Codes</span>
             <span class="badge-btn square popup-btn">
                 <i class="bi bi-plus-lg"></i>    
                 <div class="popup-btn-popup-wrapper">
@@ -153,7 +153,7 @@
                             <a href="#" class="popup-btn-link">
                                 <span>New QR code</span>
                             </a>
-                            <a href="bulkqrcodes.html" class="popup-btn-link">
+                            <a href="#" class="popup-btn-link">
                                 <span>Bulk create</span>
                             </a>
                         </div>
@@ -161,29 +161,129 @@
                 </div>
             </span>
         </div>
-        <div class="dashboard-cards">
-            <div class="dashboard-card">
-                <div class="card-number">2</div>
-                <div class="card-info">Static QR Codes</div>
-                <div class="card-number stat"><i class="bi bi-question-circle-fill"></i></div>
-                <div class="card-info"><a href="#">Upgrade</a> to track scans</div>
-                <a href="staticqrcodes.html" class="card-link">My Static QR Codes</a>
+        
+        <div class="qrcode-form">
+            <div class="form-header">
+                <div class="form-input">
+                    <input type="text" placeholder="Type to search">
+                    <i class="bi bi-search search-icon"></i>
+                </div>
+                <div class="selection-info when-selections hidden">
+                    <div class="selected-text">2 selected</div>
+                    <div class="info-item popup-btn click-to-open">
+                        <span>Move</span>
+                        <div class="popup-btn-popup-wrapper">
+                            <div
+                                class="popup-btn-popup move-to-folders"
+                                style="--popup-width: 295px"
+                            >
+                                <div class="header">
+                                    <!-- <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1022_2923)">
+                                        <path d="M16.1387 2.61532H11.7704L9.32751 0.749934C9.23897 0.681844 9.12875 0.644541 9.01501 0.644165H1.90816C1.42514 0.644165 0.961898 0.827189 0.62035 1.15297C0.278802 1.47876 0.0869223 1.92062 0.0869223 2.38134V15.8717C0.0862101 15.9908 0.131871 16.1059 0.215059 16.1948C0.298246 16.2836 0.413037 16.3398 0.537191 16.3525H0.590954C0.706516 16.3521 0.818467 16.3141 0.908288 16.2447C0.998108 16.1753 1.06042 16.0788 1.08491 15.9711L3.14472 6.67622C3.18591 6.50311 3.28885 6.34902 3.43594 6.24029C3.58303 6.13155 3.76515 6.07492 3.95117 6.08006H17.4525C17.5862 6.08006 17.7144 6.02941 17.8089 5.93925C17.9034 5.84909 17.9565 5.7268 17.9565 5.59929V4.3525C17.9565 3.89232 17.7651 3.45095 17.4243 3.12526C17.0835 2.79957 16.6211 2.61617 16.1387 2.61532Z" fill="#425466"/>
+                                        <path d="M19.5198 5.77559C19.3492 5.57029 19.1321 5.40452 18.8848 5.29072C18.6375 5.17693 18.3663 5.11806 18.0917 5.11854H3.9519C3.53942 5.11761 3.13891 5.25076 2.8164 5.49605C2.49388 5.74133 2.26861 6.08412 2.17771 6.46789L0.114539 15.7628C0.0969867 15.8324 0.0959815 15.905 0.111596 15.975C0.127211 16.0451 0.159052 16.111 0.204789 16.1678C0.250526 16.2247 0.309004 16.271 0.375945 16.3035C0.442885 16.3361 0.516597 16.3539 0.591689 16.3557H16.4116C16.8244 16.3559 17.2249 16.2221 17.5474 15.9762C17.8698 15.7304 18.095 15.3872 18.1858 15.0031L19.8659 7.25315C19.9296 6.99796 19.9315 6.73229 19.8716 6.47628C19.8116 6.22027 19.6913 5.98065 19.5198 5.77559Z" fill="#6B7C8D"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1022_2923">
+                                        <rect width="20" height="16" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg> -->
+                                    <span>Folders</span>
+                                    <i class="bi bi-x-lg popup-close-btn"></i>
+                                </div>
+                                <div class="folders-conatiner folder-list">
+                                    <div class="folder-list-item">
+                                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1022_2923)">
+                                            <path d="M16.1387 2.61532H11.7704L9.32751 0.749934C9.23897 0.681844 9.12875 0.644541 9.01501 0.644165H1.90816C1.42514 0.644165 0.961898 0.827189 0.62035 1.15297C0.278802 1.47876 0.0869223 1.92062 0.0869223 2.38134V15.8717C0.0862101 15.9908 0.131871 16.1059 0.215059 16.1948C0.298246 16.2836 0.413037 16.3398 0.537191 16.3525H0.590954C0.706516 16.3521 0.818467 16.3141 0.908288 16.2447C0.998108 16.1753 1.06042 16.0788 1.08491 15.9711L3.14472 6.67622C3.18591 6.50311 3.28885 6.34902 3.43594 6.24029C3.58303 6.13155 3.76515 6.07492 3.95117 6.08006H17.4525C17.5862 6.08006 17.7144 6.02941 17.8089 5.93925C17.9034 5.84909 17.9565 5.7268 17.9565 5.59929V4.3525C17.9565 3.89232 17.7651 3.45095 17.4243 3.12526C17.0835 2.79957 16.6211 2.61617 16.1387 2.61532Z" fill="#425466"/>
+                                            <path d="M19.5198 5.77559C19.3492 5.57029 19.1321 5.40452 18.8848 5.29072C18.6375 5.17693 18.3663 5.11806 18.0917 5.11854H3.9519C3.53942 5.11761 3.13891 5.25076 2.8164 5.49605C2.49388 5.74133 2.26861 6.08412 2.17771 6.46789L0.114539 15.7628C0.0969867 15.8324 0.0959815 15.905 0.111596 15.975C0.127211 16.0451 0.159052 16.111 0.204789 16.1678C0.250526 16.2247 0.309004 16.271 0.375945 16.3035C0.442885 16.3361 0.516597 16.3539 0.591689 16.3557H16.4116C16.8244 16.3559 17.2249 16.2221 17.5474 15.9762C17.8698 15.7304 18.095 15.3872 18.1858 15.0031L19.8659 7.25315C19.9296 6.99796 19.9315 6.73229 19.8716 6.47628C19.8116 6.22027 19.6913 5.98065 19.5198 5.77559Z" fill="#6B7C8D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1022_2923">
+                                            <rect width="20" height="16" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span class="title">Folder name</span>
+                                        <span class="count">2 QR Codes</span>
+                                    </div>
+                                    <div class="folder-list-item">
+                                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1022_2923)">
+                                            <path d="M16.1387 2.61532H11.7704L9.32751 0.749934C9.23897 0.681844 9.12875 0.644541 9.01501 0.644165H1.90816C1.42514 0.644165 0.961898 0.827189 0.62035 1.15297C0.278802 1.47876 0.0869223 1.92062 0.0869223 2.38134V15.8717C0.0862101 15.9908 0.131871 16.1059 0.215059 16.1948C0.298246 16.2836 0.413037 16.3398 0.537191 16.3525H0.590954C0.706516 16.3521 0.818467 16.3141 0.908288 16.2447C0.998108 16.1753 1.06042 16.0788 1.08491 15.9711L3.14472 6.67622C3.18591 6.50311 3.28885 6.34902 3.43594 6.24029C3.58303 6.13155 3.76515 6.07492 3.95117 6.08006H17.4525C17.5862 6.08006 17.7144 6.02941 17.8089 5.93925C17.9034 5.84909 17.9565 5.7268 17.9565 5.59929V4.3525C17.9565 3.89232 17.7651 3.45095 17.4243 3.12526C17.0835 2.79957 16.6211 2.61617 16.1387 2.61532Z" fill="#425466"/>
+                                            <path d="M19.5198 5.77559C19.3492 5.57029 19.1321 5.40452 18.8848 5.29072C18.6375 5.17693 18.3663 5.11806 18.0917 5.11854H3.9519C3.53942 5.11761 3.13891 5.25076 2.8164 5.49605C2.49388 5.74133 2.26861 6.08412 2.17771 6.46789L0.114539 15.7628C0.0969867 15.8324 0.0959815 15.905 0.111596 15.975C0.127211 16.0451 0.159052 16.111 0.204789 16.1678C0.250526 16.2247 0.309004 16.271 0.375945 16.3035C0.442885 16.3361 0.516597 16.3539 0.591689 16.3557H16.4116C16.8244 16.3559 17.2249 16.2221 17.5474 15.9762C17.8698 15.7304 18.095 15.3872 18.1858 15.0031L19.8659 7.25315C19.9296 6.99796 19.9315 6.73229 19.8716 6.47628C19.8116 6.22027 19.6913 5.98065 19.5198 5.77559Z" fill="#6B7C8D"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1022_2923">
+                                            <rect width="20" height="16" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span class="title">Folder 2</span>
+                                        <span class="count">0 QR Codes</span>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <span>New folder</span>
+                                    <div class="badge-btn">Move here</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item popup-btn">
+                        <span>Download</span>
+                        <div class="popup-btn-popup-wrapper">
+                            <div
+                                class="popup-btn-popup"
+                                style="--popup-width: 160px"
+                            >
+                                <div class="popup-btn-links">
+                                    <a href="#" class="popup-btn-link">
+                                        <span>PNG</span>
+                                        <i class="bi m-inverse bi-chevron-right"></i>
+                                    </a>
+                                    <a href="#" class="popup-btn-link">
+                                        <span>SVG</span>
+                                        <i class="bi m-inverse bi-chevron-right"></i>
+                                    </a>
+                                    <a href="#" class="popup-btn-link">
+                                        <span>PDF</span>
+                                        <i class="bi m-inverse bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item delete">Delete</div>
+                </div>
+                <div class="selection-info when-no-selections">
+                    <div class="selected-text">0 selected</div>
+                    <div class="info-item select-all-qr-codes-btn">
+                        <span>Select all</span>
+                    </div>
+                </div>
             </div>
-            <div class="dashboard-card">
-                <div class="card-number">10</div>
-                <div class="card-info">Dynamic QR Codes</div>
-                <div class="card-number stat">14,567</i></div>
-                <div class="card-info">Scans</div>
-                <a href="dynamicqrcodes.html" class="card-link">My Dynamic QR Codes</a>
+            <div class="form-content">
+                <div class="form-bread-crumb mb-0">
+                    <span class="page-name">Static QR Codes</span>
+                    <i class="bi bi-chevron-right icon"></i>
+                    <span class="folder-name selected-folder-name">View all</span>
+                </div>
             </div>
-            <div class="dashboard-card">
-                <div class="card-number">0</div>
-                <div class="card-info">NFC tags created</div>
-                <div class="card-number stat"><i class="bi bi-dash"></i></div>
-                <div class="card-info">Taps</div>
-                <a href="encrypted-nfc.html" class="card-link">My NFC Tags</a>
-            </div>
-        </div><!-- Dashboard cards -->
+        </div>
+
+        <div class="page-empty-content">
+            <svg width="122" height="108" viewBox="0 0 122 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.0662 5.15789C56.0368 -1.7193 65.9632 -1.7193 69.9337 5.1579L120.026 91.9211C123.997 98.7982 119.034 107.395 111.093 107.395H10.9072C2.96613 107.395 -1.99706 98.7982 1.97349 91.9211L52.0662 5.15789Z" fill="#D0D8DF"/>
+                <path d="M66.9012 23.6172L66.2314 72.9186H58.461L57.7912 23.6172H66.9012ZM62.3462 92.7464C60.6939 92.7464 59.276 92.1547 58.0926 90.9713C56.9092 89.7878 56.3175 88.37 56.3175 86.7177C56.3175 85.0654 56.9092 83.6475 58.0926 82.4641C59.276 81.2807 60.6939 80.689 62.3462 80.689C63.9985 80.689 65.4164 81.2807 66.5998 82.4641C67.7832 83.6475 68.3749 85.0654 68.3749 86.7177C68.3749 87.8118 68.0958 88.8165 67.5376 89.732C67.0017 90.6475 66.276 91.3843 65.3606 91.9426C64.4674 92.4784 63.4626 92.7464 62.3462 92.7464Z" fill="#788DA2"/>
+            </svg>  
+            <p class="info">No results found.</p>
+            <a href="#" class="badge-btn">
+                <span>Create QR Code</span>
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
     </div>
 
     <div class="container page-footer">
@@ -207,6 +307,6 @@
         </div>
     </div>
 
-    <script src="assets/js/popup.js"></script>
+    <script src="../../assets/js/popup.js"></script>
 </body>
 </html>
