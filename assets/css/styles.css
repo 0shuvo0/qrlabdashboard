@@ -1165,6 +1165,10 @@ button {
   margin-top: 1em;
 }
 
+.modal-content.add-user-modal {
+  max-width: 500px;
+}
+
 .edit-design-content {
   display: -webkit-box;
   display: -ms-flexbox;

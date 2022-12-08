@@ -6,6 +6,7 @@ const accountPageContent = $('#account-page-content')
 
 const activeTab = $('.account-tab-btns .tab-btn.active')
 
+
 const updateContent = templateId => {
     if(!templateId) return
     const template = $('#' + templateId)
@@ -26,5 +27,32 @@ profileTabBtns.forEach(btn => {
         resetTabBtns()
         btn.classList.add('active')
         updateContent(btn.dataset.template)
+    })
+})
+
+
+const addUserBtn = $('.add-new-user-btn')
+const addUserModal = $('.add-user-modal-wrapper')
+addUserBtn.addEventListener('click', () => addUserModal.classList.remove('hidden'))
+
+const editUserBtns  = $$('.edit-user-btn')
+const editUserModal = $('.edit-user-modal-wrapper')
+editUserBtns.forEach(btn => {
+    btn.addEventListener('click', () => editUserModal.classList.remove('hidden'))
+})
+
+const deleteUserBtns  = $$('.delete-user-btn')
+const deleteUserModal = $('.delete-user-modal-wrapper')
+deleteUserBtns.forEach(btn => {
+    btn.addEventListener('click', () => deleteUserModal.classList.remove('hidden'))
+})
+
+
+$$('.modal-wrapper').forEach(modal => {
+    const closeBtns = $$('.close-btn', modal)
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modal.classList.add('hidden')
+        })
     })
 })
