@@ -27,25 +27,27 @@ profileTabBtns.forEach(btn => {
         resetTabBtns()
         btn.classList.add('active')
         updateContent(btn.dataset.template)
+        if(btn.innerText === 'Users') initUserModals()
     })
 })
 
-
-const addUserBtn = $('.add-new-user-btn')
-const addUserModal = $('.add-user-modal-wrapper')
-addUserBtn.addEventListener('click', () => addUserModal.classList.remove('hidden'))
-
-const editUserBtns  = $$('.edit-user-btn')
-const editUserModal = $('.edit-user-modal-wrapper')
-editUserBtns.forEach(btn => {
-    btn.addEventListener('click', () => editUserModal.classList.remove('hidden'))
-})
-
-const deleteUserBtns  = $$('.delete-user-btn')
-const deleteUserModal = $('.delete-user-modal-wrapper')
-deleteUserBtns.forEach(btn => {
-    btn.addEventListener('click', () => deleteUserModal.classList.remove('hidden'))
-})
+function initUserModals(){
+    const addUserBtn = $('.add-new-user-btn')
+    const addUserModal = $('.add-user-modal-wrapper')
+    addUserBtn.addEventListener('click', () => addUserModal.classList.remove('hidden'))
+    
+    const editUserBtns  = $$('.edit-user-btn')
+    const editUserModal = $('.edit-user-modal-wrapper')
+    editUserBtns.forEach(btn => {
+        btn.addEventListener('click', () => editUserModal.classList.remove('hidden'))
+    })
+    
+    const deleteUserBtns  = $$('.delete-user-btn')
+    const deleteUserModal = $('.delete-user-modal-wrapper')
+    deleteUserBtns.forEach(btn => {
+        btn.addEventListener('click', () => deleteUserModal.classList.remove('hidden'))
+    })
+}
 
 
 $$('.modal-wrapper').forEach(modal => {
