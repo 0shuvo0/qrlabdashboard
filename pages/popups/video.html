@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="993f96e5-4482-480f-b1f3-303c39063954";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="modal-wrapper">
+        <div class="modal-content edit-info-modal make-static">
+            <div class="modal-title">
+                <span>Edit Info</span>
+                <i class="bi close-btn bi-x"></i>
+            </div>
+            <div class="modal-main">
+                <div class="input-group">
+                    <label>QR Code name</label>
+                    <input type="text" placeholder="Enter QR Code title" value="My website">
+                </div>
+                <div class="input-group">
+                    <label>Choose the URL of your QR Code</label>
+                    <div class="qr-code-url-inputs">
+                        <input type="text" placeholder="Username" value="acmeinc">
+                        <input disabled class="disabled" type="text" value=".qrlab.com">
+                        <input disabled class="disabled" type="text" value="/">
+                        <input type="text" placeholder="Parameter(Optional)" value="parameter">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Video</label>
+                </div>
+                <div class="input-group mt-05">
+                    <style>
+                        .img-drop-zone{
+                            border: 2px dashed var(--color-primary);
+                            border-radius: 7px;
+                            padding: 3em 1.5em;
+                            text-align: center;
+                            cursor: pointer;
+                            background-color: rgba(247, 247, 247, .7);
+                        }
+                        .img-drop-zone i{
+                            font-size: 3em;
+                            color: var(--color-primary);
+                        }
+                        .img-drop-zone input{
+                            display: none;
+                        }
+                    </style>
+                        
+                    <label
+                        class="img-drop-zone"
+                    >
+                        <i class="bi bi-cloud-arrow-up"></i>
+                        <div>Drag and drop files here or browse</div>
+                        <input type="file" name="customImg" id="customImg">
+                    </label>
+                </div>
+                <!-- <div class="input-group">
+                    <label>Destination url</label>
+                    <input type="text" placeholder="Enter QR Code title" value="google.com">
+                </div>
+                <p class="btm-info">Users who scan your Dynamic QR Code will be redirected to google.com</p> -->
+            </div>
+            <div class="modal-footer">
+                <button class="badge-btn close-btn link">Cancel</button>
+                <button class="badge-btn">
+                    <span>Save</span>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

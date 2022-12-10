@@ -781,7 +781,7 @@ button{
         letter-spacing: 0.02em;
         margin-bottom: .5em;
     }
-    input{
+    input, textarea, select{
         display: block;
         width: 100%;
         outline: none;
@@ -796,6 +796,10 @@ button{
             pointer-events: none;
         }
     }
+    textarea{
+        min-height: 60px;
+        padding-block: .75em;
+    }
 }
 .input-groups{
     display: grid;
@@ -803,8 +807,21 @@ button{
     &.two-col{
         grid-template-columns: 1fr 1fr;
     }
+    &.three-col{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &.col-1-2{
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
+
+.inputs-section-title{
+    margin-bottom: .5em;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
 
 
 .accordion-container{
@@ -842,6 +859,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    ::-webkit-scrollbar{
+        width: 0;
+    }
     &.hidden{
         display: none;
     }
@@ -938,6 +958,8 @@ button{
 .modal-content.add-user-modal{
     max-width: 500px;
 }
+
+
 
 
 .edit-design-content{
@@ -1716,6 +1738,65 @@ button{
         font-size: 18px;
     }
 }
+
+
+
+
+
+$toggleActiveBg: var(--color-primary);
+.toggle {
+	cursor: pointer;
+	display: inline-block;
+}
+.toggle-switch {
+	display: inline-block;
+	background: #ccc;
+	border-radius: 16px;
+	width: 58px;
+	height: 32px;
+	position: relative;
+	vertical-align: middle;
+	transition: background 0.25s;
+	&:before,
+	&:after {
+		content: "";
+	}
+	&:before {
+		display: block;
+		background: linear-gradient(to bottom, #fff 0%,#eee 100%);
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		transition: left 0.25s;
+	}
+	.toggle:hover &:before {
+		background: linear-gradient(to bottom, #fff 0%,#fff 100%);
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+	}
+	.toggle-checkbox:checked + & {
+		background: $toggleActiveBg;
+		&:before {
+			left: 30px;
+		}
+	}
+}
+.toggle-checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+.toggle-label {
+	margin-left: 5px;
+	position: relative;
+	top: 2px;
+    font-weight: 700;
+}
+
+
+
 
 
 
