@@ -272,16 +272,32 @@
                     <span class="filter-btn">Dynamic NFC</span>
                     <span class="filter-btn">Encrypted NFC</span>
                 </div>
-                <div class="form-input w-full mt-1">
+                <div class="form-input input-with-suggestions w-full mt-1">
                     <input type="text" placeholder="Type to search">
                     <i class="bi bi-search search-icon"></i>
+                    <div class="input-with-suggestions-wrapper">
+                        <div class="input-with-suggestions-content">
+                            <div class="suggestion-item">
+                                <div class="suggestion">My latest campaign 1</div>
+                                <i class="bi bi-arrow-90deg-up"></i>
+                            </div>
+                            <div class="suggestion-item">
+                                <div class="suggestion">My latest campaign 2</div>
+                                <i class="bi bi-arrow-90deg-up"></i>
+                            </div>
+                            <div class="suggestion-item">
+                                <div class="suggestion">My latest campaign 3</div>
+                                <i class="bi bi-arrow-90deg-up"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="analytics-filters-container">
                     <div class="analytics-filter-item">
                         <p class="subtitle">Dynamic QR Code</p>
-                        <p class="title">My latest campaign</p>
+                        <p class="title">My latest campaign 1</p>
                         <div class="nums">
-                            <i class="bi bi-bar-chart-fill"></i>
+                            <i class="bi bi-bar-chart-fill arrow-90deg-up"></i>
                             <span>45 scans</span>
                         </div>
                         <div class="select-box analytics-filter-select active">
@@ -290,7 +306,7 @@
                     </div>
                     <div class="analytics-filter-item">
                         <p class="subtitle">Dynamic QR Code</p>
-                        <p class="title">My latest campaign</p>
+                        <p class="title">My latest campaign 2</p>
                         <div class="nums">
                             <i class="bi bi-bar-chart-fill"></i>
                             <span>45 scans</span>
@@ -301,7 +317,7 @@
                     </div>
                     <div class="analytics-filter-item active">
                         <p class="subtitle">Dynamic NFC</p>
-                        <p class="title">My latest campaign</p>
+                        <p class="title">My latest campaign 3</p>
                         <div class="tags">
                             <div class="tag">
                                 <span class="id">TAGID643750364646</span>
@@ -353,5 +369,6 @@
     </div>
 
     <script src="assets/js/popup.js"></script>
+    <script src="assets/js/analytics.js"></script>
 </body>
 </html>

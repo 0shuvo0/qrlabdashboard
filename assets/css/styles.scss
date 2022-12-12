@@ -1797,6 +1797,59 @@ $toggleActiveBg: var(--color-primary);
 
 
 
+.input-with-suggestions{
+    position: relative;
+    overflow: visible;
+    input{
+        background-color: transparent;
+        &:hover + .input-with-suggestions-wrapper{
+            background-color: red !important;
+        }
+    }
+    input:focus ~ .input-with-suggestions-wrapper{
+        display: block;
+    }
+}
+
+.input-with-suggestions-wrapper{
+    &:hover{
+        display: block !important;
+    }
+    display: none;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,.075);
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #DFE4EA;
+    max-height: 400px;
+    overflow: auto;
+    .suggestion-item{
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: .75em 1.5em;
+        color: var(--color-dark);
+        border-bottom: 1px solid #DFE4EA;
+        &:last-child{
+            border-bottom: none;
+        }
+        &:hover{
+            background-color: rgba(0,0,0,.05);
+        }
+        i{
+            transform: rotateY(180deg)
+        }
+    }
+}
+
+
 
 
 
