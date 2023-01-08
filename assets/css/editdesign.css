@@ -60,10 +60,7 @@
 .input-group .input:focus{
     outline: 2px solid var(--color-dark);
 }
-/* .input-group .input.color{
-    /* display: none; */
-}
-.colour-picker-wrap{
+/*.colour-picker-wrap{
     display: flex;
     cursor: pointer;
     position: relative;
