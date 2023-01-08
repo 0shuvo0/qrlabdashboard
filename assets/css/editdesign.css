@@ -17,6 +17,10 @@
     grid-template-columns: repeat(auto-fit, 62px);
     grid-auto-rows: 70px;
 }
+.shape-forms-grid.file-input-uploads{
+  grid-template-columns: repeat(auto-fit, 60px);
+    grid-auto-rows: 60px;
+}
 .shape-forms-grid .w-embed{
     background-color: #f9fafb;
 }
@@ -170,4 +174,33 @@ label {
   }
 
 
-
+.qr-editing-tabs .tabs-nav{
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.qr-editing-tabs .tabs-nav .tab-item{
+  padding: 0.5em 1em;
+  border: 1px solid #eaeef1;
+  border-radius: 2em;
+  background-color: #fdfdfd;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+.qr-editing-tabs .tabs-nav .tab-item.active{
+  border-color: #eaecff;
+  background-color: #eaecff;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.qr-editing-tab-contents{
+  margin-top: 1em;
+}
+.qr-editing-tab-content{
+  display: none;
+}
+.qr-editing-tab-content.active{
+  display: block;
+}

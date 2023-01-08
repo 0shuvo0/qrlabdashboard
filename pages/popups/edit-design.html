@@ -630,17 +630,194 @@
                                 <i class="bi bi-chevron-down expand-btn"></i>
                             </div>
                             <div class="accordion-content">
-                                helol
+                              <div style="max-width: 300px">
+                                <h4 class="tertiary-heading">Background</h4>
+                                <div class="input-group">
+                                  <label class="label">Choose a colour</label>
+                                  <div class="colour-picker-wrap" data-clr-placeholder="black">
+                                    <div class="input text">#000000</div>
+                                    <input class="input color" type="color">
+                                    <div class="color-preview"></div>
+                                    <span class="reset">Reset</span>
+                                  </div>
+                                </div>
+                                <div class="input-group w-switch mt-05">
+                                  <label class="toggle">
+                                    <input class="toggle-checkbox" type="checkbox">
+                                    <div class="toggle-switch"></div>
+                                  </label>
+                                  <label class="label">Transparent Background</label>
+                                </div>
+                              </div>
+                              <div class="input-group custom-file-input mt-1">
+                                <p class="label">Upload an image or animated gif</p>
+                                <label for="color-file-input" class="input file-input">
+                                  <span class="file-name-text">Choose File</span>
+                                  <span class="action">Browse</span>
+                                  <input type="file" id="color-file-input" name="color-file-input">
+                                </label>
+                                <label class="label mt-1">Or, choose from here</label>
+                                <div class="shape-forms-grid file-input-uploads">
+                                  <div class="w-embed active">
+                                    <label>
+                                      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                        </path>
+                                      </svg>
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/1.png" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/2.png" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/3.png" alt="">
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="hr my-2"></div>
+                              <div style="max-width: 300px">
+                                <h4 class="tertiary-heading">Dots</h4>
+                                <div class="qr-editing-tabs">
+                                  <div class="tabs-nav">
+                                    <div data-content="#qr-editing-tab-content-solid-colors" class="tab-item active">Solid colour</div>
+                                    <div data-content="#qr-editing-tab-content-grdient-colors" class="tab-item">Gradient</div>
+                                  </div>
+                                  <div class="qr-editing-tab-contents">
+                                    <div class="qr-editing-tab-content active" id="qr-editing-tab-content-solid-colors">
+                                      <div class="input-group">
+                                        <label class="label">Choose a colour</label>
+                                        <div class="colour-picker-wrap" data-clr-placeholder="black">
+                                          <div class="input text">#000000</div>
+                                          <input class="input color" type="color">
+                                          <div class="color-preview"></div>
+                                          <span class="reset">Reset</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="qr-editing-tab-content" id="qr-editing-tab-content-grdient-colors">
+                                      <div class="input-group">
+                                        <label class="label">Colour one</label>
+                                        <div class="colour-picker-wrap" data-clr-placeholder="black">
+                                          <div class="input text">#000000</div>
+                                          <input class="input color" type="color">
+                                          <div class="color-preview"></div>
+                                          <span class="reset">Reset</span>
+                                        </div>
+                                      </div>
+                                      <div class="input-group mt-1">
+                                        <label class="label">Colour two</label>
+                                        <div class="colour-picker-wrap" data-clr-placeholder="black">
+                                          <div class="input text">#000000</div>
+                                          <input class="input color" type="color">
+                                          <div class="color-preview"></div>
+                                          <span class="reset">Reset</span>
+                                        </div>
+                                      </div>
+                                      <div class="input-group w-switch mt-1">
+                                        <label class="toggle">
+                                          <input class="toggle-checkbox" type="checkbox">
+                                          <div class="toggle-switch"></div>
+                                        </label>
+                                        <label class="label">Radial gradient</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="hr my-2"></div>
+                              <div style="max-width: 300px">
+                                <h4 class="tertiary-heading">Eyes</h4>
+                                <div class="input-group">
+                                  <label class="label">Choose a colour for the inner eyes</label>
+                                  <div class="colour-picker-wrap" data-clr-placeholder="black">
+                                    <div class="input text">#000000</div>
+                                    <input class="input color" type="color">
+                                    <div class="color-preview"></div>
+                                    <span class="reset">Reset</span>
+                                  </div>
+                                </div>
+                                <div class="input-group mt-05">
+                                  <label class="label">Choose a colour for the outer eyes</label>
+                                  <div class="colour-picker-wrap" data-clr-placeholder="black">
+                                    <div class="input text">#000000</div>
+                                    <input class="input color" type="color">
+                                    <div class="color-preview"></div>
+                                    <span class="reset">Reset</span>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                         </div><!-- Color -->
-                        <div class="accordion-header">
+                        <div class="accordion-header active">
                             <div class="accordion-header-title">
                                 <i class="bi bi-images"></i>
                                 <span>Image</span>
                                 <i class="bi bi-chevron-down expand-btn"></i>
                             </div>
                             <div class="accordion-content">
-                                helol
+                              <div class="input-group custom-file-input mt-1">
+                                <p class="label">Upload Logo</p>
+                                <label for="logo-file-input" class="input file-input">
+                                  <span class="file-name-text">Choose File</span>
+                                  <span class="action">Browse</span>
+                                  <input type="file" id="logo-file-input" name="logo-file-input">
+                                </label>
+                                <label class="label mt-1">Or, choose from here</label>
+                                <div class="shape-forms-grid file-input-uploads">
+                                  <div class="w-embed active">
+                                    <label>
+                                      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                        </path>
+                                      </svg>
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/4.svg" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/5.svg" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/6.svg" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/7.svg" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/8.svg" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/9.svg" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="w-embed">
+                                    <label>
+                                      <img src="../../assets/images/file-input-defaults/10.svg" alt="">
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                         </div><!-- Image -->
                         <div class="accordion-header">

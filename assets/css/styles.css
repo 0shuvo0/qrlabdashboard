@@ -90,6 +90,9 @@ button {
 .d-block {
   display: block !important;
 }
+.my-2{
+  margin-block: 2em;
+}
 
 .mr-0 {
   margin-right: 0 !important;
@@ -1027,6 +1030,48 @@ button {
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
 }
+.input-group.w-switch{
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.input-group.w-switch .label{
+  margin-bottom: 0;
+}
+.file-input{
+  border: 1px solid #E2E2E2;
+  display: flex !important;
+  align-items: center;
+  padding: 0 !important;
+}
+.file-input span{
+  padding: 1em;
+}
+.file-input span:first-child{
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 1em;
+  width: 100%;
+}
+.file-input span.action{
+  border-left: 1px solid #E2E2E2;
+  line-height: 50px;
+  height: 100%;
+  padding: 0 1.5em;
+  cursor: pointer;
+}
+.file-input input{
+  display: none;
+}
+.file-input-uploads img{
+  max-width: 85%;
+  max-height: 85%;
+  display: block;
+}
+.hr{
+  height: 1px;
+  background-color: #E2E2E2;
+}
 
 .inputs-section-title {
   margin-bottom: 0.5em;
@@ -1048,7 +1093,7 @@ button {
 }
 .accordion-content{
   padding: 1.25em 1.5em;
-  padding-top: 0;
+  padding-top: 0.5em;
   display: none;
   width: 100%;
 }
