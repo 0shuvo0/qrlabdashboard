@@ -60,7 +60,7 @@
 .input-group .input:focus{
     outline: 2px solid var(--color-dark);
 }
-.input-group .input.color{
+/* .input-group .input.color{
     /* display: none; */
 }
 .colour-picker-wrap{
@@ -94,7 +94,7 @@
     height: 100%;
     opacity: 0;
     cursor: pointer;
-}
+} */
 
 
 
@@ -203,4 +203,20 @@ label {
 }
 .qr-editing-tab-content.active{
   display: block;
+}
+
+.clr-picker.clr-open{
+  z-index: 9999999;
+}
+.clr-field{
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 50px;
+}
+.clr-field input{
+  height: 50px;
+}
+.clr-field button{
+  width: 50px !important;
+  border-radius: 0 5px 5px 0;
 }

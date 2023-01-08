@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/coloris.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/editdesign.css">
+    
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="993f96e5-4482-480f-b1f3-303c39063954";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <title>Document</title>
 </head>
@@ -20,7 +22,6 @@
                 <i class="bi close-btn bi-x"></i>
             </div>
             <div class="modal-main">
-                
                 <div class="edit-design-content">
                     <div class="accordion-container w-content">
                         <div class="accordion-header">
@@ -634,12 +635,7 @@
                                 <h4 class="tertiary-heading">Background</h4>
                                 <div class="input-group">
                                   <label class="label">Choose a colour</label>
-                                  <div class="colour-picker-wrap" data-clr-placeholder="black">
-                                    <div class="input text">#000000</div>
-                                    <input class="input color" type="color">
-                                    <div class="color-preview"></div>
-                                    <span class="reset">Reset</span>
-                                  </div>
+                                  <input value="#000000" type="text" data-coloris>
                                 </div>
                                 <div class="input-group w-switch mt-05">
                                   <label class="toggle">
@@ -695,32 +691,17 @@
                                     <div class="qr-editing-tab-content active" id="qr-editing-tab-content-solid-colors">
                                       <div class="input-group">
                                         <label class="label">Choose a colour</label>
-                                        <div class="colour-picker-wrap" data-clr-placeholder="black">
-                                          <div class="input text">#000000</div>
-                                          <input class="input color" type="color">
-                                          <div class="color-preview"></div>
-                                          <span class="reset">Reset</span>
-                                        </div>
+                                        <input value="#000000" type="text" data-coloris>
                                       </div>
                                     </div>
                                     <div class="qr-editing-tab-content" id="qr-editing-tab-content-grdient-colors">
                                       <div class="input-group">
                                         <label class="label">Colour one</label>
-                                        <div class="colour-picker-wrap" data-clr-placeholder="black">
-                                          <div class="input text">#000000</div>
-                                          <input class="input color" type="color">
-                                          <div class="color-preview"></div>
-                                          <span class="reset">Reset</span>
-                                        </div>
+                                        <input value="#000000" type="text" data-coloris>
                                       </div>
                                       <div class="input-group mt-1">
                                         <label class="label">Colour two</label>
-                                        <div class="colour-picker-wrap" data-clr-placeholder="black">
-                                          <div class="input text">#000000</div>
-                                          <input class="input color" type="color">
-                                          <div class="color-preview"></div>
-                                          <span class="reset">Reset</span>
-                                        </div>
+                                        <input value="#000000" type="text" data-coloris>
                                       </div>
                                       <div class="input-group w-switch mt-1">
                                         <label class="toggle">
@@ -738,21 +719,11 @@
                                 <h4 class="tertiary-heading">Eyes</h4>
                                 <div class="input-group">
                                   <label class="label">Choose a colour for the inner eyes</label>
-                                  <div class="colour-picker-wrap" data-clr-placeholder="black">
-                                    <div class="input text">#000000</div>
-                                    <input class="input color" type="color">
-                                    <div class="color-preview"></div>
-                                    <span class="reset">Reset</span>
-                                  </div>
+                                  <input value="#000000" type="text" data-coloris>
                                 </div>
                                 <div class="input-group mt-05">
                                   <label class="label">Choose a colour for the outer eyes</label>
-                                  <div class="colour-picker-wrap" data-clr-placeholder="black">
-                                    <div class="input text">#000000</div>
-                                    <input class="input color" type="color">
-                                    <div class="color-preview"></div>
-                                    <span class="reset">Reset</span>
-                                  </div>
+                                  <input value="#000000" type="text" data-coloris>
                                 </div>
                               </div>
                             </div>
@@ -817,6 +788,13 @@
                                     </label>
                                   </div>
                                 </div>
+                              </div>
+                              <div class="input-group w-switch mt-05">
+                                <label class="toggle">
+                                  <input class="toggle-checkbox" type="checkbox">
+                                  <div class="toggle-switch"></div>
+                                </label>
+                                <label class="label">Remove background behind logo</label>
                               </div>
                             </div>
                         </div><!-- Image -->
@@ -902,12 +880,7 @@
                                     </div>
                                     <div class="input-group">
                                         <label class="label">Frame color</label>
-                                        <div class="colour-picker-wrap" data-clr-placeholder="black">
-                                          <div class="input text">#000000</div>
-                                          <input class="input color" type="color">
-                                          <div class="color-preview"></div>
-                                          <span class="reset">Reset</span>
-                                        </div>
+                                        <input value="#000000" type="text" data-coloris>
                                     </div>
                                 </div>
                             </div>
@@ -930,6 +903,7 @@
                         <style>
                             .qr-code-container{
                                 align-items: flex-start !important;
+                                height: fit-content !important;
                             }
                         </style>
                     </div>
@@ -948,6 +922,7 @@
         </div>
     </div>
 
+    <script src="../../assets/js/coloris.min.js"></script>
     <script src="../../assets/js/editdesign.js"></script>
 </body>
 </html>

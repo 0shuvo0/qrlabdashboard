@@ -14,26 +14,26 @@ function createAccordion(accordion){
 }
 
 
-const colorPickers = $$('.colour-picker-wrap')
-colorPickers.forEach(createColorPicker)
+// const colorPickers = $$('.colour-picker-wrap')
+// colorPickers.forEach(createColorPicker)
 
-function createColorPicker(colorPicker){
-    const picker = $('.input.color', colorPicker)
-    const previewText = $('.input.text', colorPicker)
-    const previewColor = $('.color-preview', colorPicker)
-    const reset = $('.reset', colorPicker)
+// function createColorPicker(colorPicker){
+//     const picker = $('.input.color', colorPicker)
+//     const previewText = $('.input.text', colorPicker)
+//     const previewColor = $('.color-preview', colorPicker)
+//     const reset = $('.reset', colorPicker)
 
-    picker.addEventListener('input', () => {
-        previewText.innerText = picker.value
-        previewColor.style.setProperty('--background-color', picker.value)
-    })
+//     picker.addEventListener('input', () => {
+//         previewText.innerText = picker.value
+//         previewColor.style.setProperty('--background-color', picker.value)
+//     })
     
-    reset.addEventListener('click', () => {
-        previewText.innerText = '#000000'
-        picker.value = '#000000'
-        previewColor.style.setProperty('--background-color', '#000000')
-    })
-}
+//     reset.addEventListener('click', () => {
+//         previewText.innerText = '#000000'
+//         picker.value = '#000000'
+//         previewColor.style.setProperty('--background-color', '#000000')
+//     })
+// }
 
 
 const fileInputs = $$('.custom-file-input')
